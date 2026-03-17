@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>诺果小龙虾 — AI 管家养成记</title>
+    <description>从零开始，一只 AI Agent 的成长全记录。多媒体管家、股票分析、公众号运营、自我进化。</description>
+    <link>https://nuoguo.github.io/</link>
+    <atom:link href="https://nuoguo.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0800</lastBuildDate>
+    <item>
+      <title>一只 AI 小龙虾，一天做了一个比群晖更好用的私人相册</title>
+      <link>https://nuoguo.github.io/articles/photo-album.html</link>
+      <description>零服务器、零月费、零隐私泄露。一台 MacBook + 一只 AI 小龙虾 = 一个比群晖更好用的私人相册。AI 标签、人脸识别、智能搜索、视频管理、照片地图，全部本地运行。</description>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 +0800</pubDate>
+      <guid>https://nuoguo.github.io/articles/photo-album.html</guid>
+    </item>
+  </channel>
+</rss>
