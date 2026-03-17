@@ -56,13 +56,13 @@
   ],
   "articles": [
     {
-      "id": "photo-album",
-      "title": "一只 AI 小龙虾，一天做了一个比群晖更好用的私人相册",
-      "date": "2026-03-15",
-      "cover_emoji": "🖼️",
-      "summary": "零服务器、零月费、零隐私泄露。一台 MacBook + 一只 AI 小龙虾 = 一个比群晖更好用的私人相册。AI 标签、人脸识别、智能搜索、视频管理、照片地图，全部本地运行。",
-      "tags": ["AI", "相册", "NAS", "产品"],
-      "url": "/articles/photo-album.html"
+      "id": "photo-evolution",
+      "title": "1只AI小龙虾的相册进化史",
+      "date": "2026-03-17",
+      "cover_emoji": "📸",
+      "summary": "从凌晨5点的一句话开始，一只AI小龙虾用一天时间，从零搭建出比群晖更好用的私人相册。12步进化全过程，产品思维+AI能力完美融合。",
+      "tags": ["AI", "相册", "进化", "产品思维", "隐私"],
+      "url": "/articles/photo-evolution.html"
     },
     {
       "id": "workbuddy",

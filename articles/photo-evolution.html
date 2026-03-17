@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1只AI小龙虾的相册进化史 — 诺果小龙虾</title>
+<meta name="description" content="从凌晨5点的一句话开始，一只AI小龙虾用一天时间，从零搭建出比群晖更好用的私人相册系统。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦞</text></svg>">
+<style>
+:root {
+  --text: #1d1d1f;
+  --text-secondary: #86868b;
+  --bg: #fbfbfd;
+  --card-bg: #ffffff;
+  --accent: #7c3aed;
+  --accent-light: #faf5ff;
+  --border: #e5e7eb;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "PingFang SC", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+  font-size: 17px;
+}
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(251,251,253,0.72);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  padding: 0 22px;
+}
+.nav-inner {
+  max-width: 980px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 48px;
+}
+.nav-brand { font-size: 15px; font-weight: 600; color: var(--text); text-decoration: none; }
+.nav-brand:hover { color: var(--accent); }
+.nav-links { display: flex; gap: 24px; }
+.nav-links a { font-size: 14px; color: var(--text-secondary); text-decoration: none; transition: color 0.2s; }
+.nav-links a:hover { color: var(--text); }
+
+.article-header {
+  max-width: 720px; margin: 0 auto;
+  padding: 80px 22px 40px;
+  text-align: center;
+}
+.article-header .back {
+  display: inline-block; font-size: 14px; color: var(--accent);
+  text-decoration: none; margin-bottom: 32px;
+}
+.article-header .back:hover { text-decoration: underline; }
+.article-header .date { font-size: 14px; color: var(--text-secondary); margin-bottom: 12px; }
+.article-header h1 {
+  font-size: 40px; font-weight: 700; letter-spacing: -0.015em;
+  line-height: 1.15; margin-bottom: 16px;
+}
+.article-header .summary {
+  font-size: 19px; color: var(--text-secondary); line-height: 1.58;
+  max-width: 600px; margin: 0 auto;
+}
+.article-tags { margin-top: 20px; }
+.article-tags span {
+  display: inline-block; font-size: 12px; font-weight: 500;
+  padding: 4px 12px; border-radius: 999px;
+  background: var(--accent-light); color: var(--accent);
+  margin: 4px;
+}
+
+.article-body {
+  max-width: 800px; margin: 0 auto; padding: 0 22px 80px;
+}
+.slide-section {
+  margin-bottom: 48px;
+}
+.slide-section img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+.slide-section .caption {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text);
+  padding: 0 8px;
+}
+.slide-section .caption strong {
+  color: var(--accent);
+}
+
+.divider {
+  width: 60px; height: 3px;
+  background: linear-gradient(90deg, var(--accent), #a78bfa);
+  border-radius: 2px;
+  margin: 48px auto;
+}
+
+footer {
+  text-align: center; padding: 48px 22px;
+  background: var(--text); color: rgba(255,255,255,0.6); font-size: 14px;
+}
+footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
+
+@media (max-width: 734px) {
+  .article-header h1 { font-size: 28px; }
+  .article-header .summary { font-size: 17px; }
+  .article-header { padding: 60px 16px 32px; }
+  .article-body { padding: 0 16px 60px; }
+  .slide-section { margin-bottom: 36px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">🦞 诺果小龙虾</a>
+    <div class="nav-links">
+      <a href="/">首页</a>
+      <a href="/#timeline">时间线</a>
+      <a href="/#articles">文章</a>
+    </div>
+  </div>
+</nav>
+
+<header class="article-header">
+  <a href="/" class="back">← 返回首页</a>
+  <div class="date">2026 年 3 月 17 日</div>
+  <h1>1只AI小龙虾的相册进化史</h1>
+  <p class="summary">从凌晨5点的一句话开始，一只AI小龙虾用一天时间，从零搭建出比群晖更好用的私人相册。这是它的进化全过程。</p>
+  <div class="article-tags">
+    <span>AI</span><span>相册</span><span>进化</span><span>产品思维</span><span>隐私</span>
+  </div>
+</header>
+
+<article class="article-body">
+
+  <div class="slide-section">
+    <img src="/articles/photo-evolution/slide_01.jpg" alt="封面：1只AI小龙虾+1台MacBook=比群晖更好用的私人相册" loading="lazy">
+    <p class="caption">1只AI小龙虾 + 1台MacBook，就能搭出一个比群晖更好用的私人相册。<strong>零服务器、零月费、零隐私泄露</strong>，全部由AI驱动。你的照片和视频，安静地躺在自己的电脑里，被一只小龙虾精心照料着。</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="slide-section">
+    <img src="/articles/photo-evolution/slide_02.jpg" alt="照片管理的不可能三角" loading="lazy">
+    <p class="caption">照片管理存在一个「不可能三角」：<strong>低门槛、低费用、高隐私</strong>，三者不可兼得。iCloud门槛低但贵且隐私存疑，群晖NAS隐私好但配置复杂劝退90%的人。而诺果小龙虾——只需一句话对话，零费用，100%本地存储，零数据上传。三角，被打破了。</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="slide-section">
+    <img src="/articles/photo-evolution/slide_03.jpg" alt="凌晨5点一切从一句话开始" loading="lazy">
+    <p class="caption">凌晨5点，主人说了一句：「帮我搜一下冰淇淋的照片。」小龙虾还没有图库功能，但它没有推脱——「我现在就可以搭一个。SQLite数据库 + 智能标签 + 搜索引擎，给我30分钟就行。」没有需求文档、没有技术评审、没有排期。就一个字：<strong>搭</strong>。</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="slide-section">
+    <img src="/articles/photo-evolution/slide_04.jpg" alt="分步进化01：三十分钟从无到有建图库" loading="lazy">
+    <p class="caption"><strong>进化第1步：30分钟，从零建库。</strong>照片进来后经过三道工序——SHA256去重检测确保没有重复照片，自动生成缩略图加速加载，通义千问视觉模型自动看图打标签。从入口到终点，一张照片变成了你的私人数字金库中的一条记录。</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="slide-section">
+    <img src="/articles/photo-evolution/slide_05.jpg" alt="分步进化02：被用户骂出来的好体验" loading="lazy">
+    <p class="caption"><strong>进化第2步：被「骂」出来的好体验。</strong>搜「小孩」能找到5张，搜「孩子」却一张都没有。主人一句「这也太蠢了吧？」小龙虾连夜建立了200+组同义词引擎——小孩=孩子=儿童=小朋友。它不会辩解，只会默默把系统升级。<strong>技术为你而生，而非让你适应技术。</strong></p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="slide-section">
+    <img src="/articles/photo-evolution/slide_06.jpg" alt="分步进化03：超越人类手工整理的万物识别" loading="lazy">
+    <p class="caption"><strong>进化第3步：万物识别。</strong>搜「动物园的照片」，小龙虾不仅能找到，还能自动识别出照片里的猫、狗、老虎、孔雀、大象——支持30+种常见动物分类。旅行照里的动物朋友，它全都能自己认得，再也不用手动建相册了。</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="slide-section">
+    <img src="/articles/photo-evolution/slide_07.jpg" alt="分步进化04：一小时解锁多媒体管理" loading="lazy">
+    <p class="caption"><strong>进化第4步：1小时，解锁视频管理。</strong>主人问：「你能管视频吗？」仅用1小时，小龙虾就完成了从「图片管理」到「多媒体管理」的跨越——自动提取封面帧、识别时长、生成MP4/1080p缩略图。<strong>只要你敢问，它就敢做。</strong></p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="slide-section">
+    <img src="/articles/photo-evolution/slide_08.jpg" alt="分步进化05：苹果级人脸识别100%锁在本地" loading="lazy">
+    <p class="caption"><strong>进化第5步：苹果级人脸识别，100%锁在本地。</strong>苹果相册的人脸识别，耗资几十亿美元研发。小龙虾用了一个下午——集成InsightFace，512维特征提取，DBSCAN自动聚类。识别40张人脸，自动分为16个人物分组。核心承诺：全程本地运行，零数据上传。<strong>你的脸，只属于你。</strong></p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="slide-section">
+    <img src="/articles/photo-evolution/slide_09.jpg" alt="分步进化06：穿越世界的照片地图" loading="lazy">
+    <p class="caption"><strong>进化第6步：照片地图。</strong>搜「纽约的照片」，小龙虾不仅找到4张相关照片，还能在地图上精确定位——纽约40.7°N, 74.0°W，中央公园冬夜、华尔街铜牛。你的照片本身就是一本旅行日记，每张带有GPS的照片都在地图上有了坐标。<strong>AI只是帮你翻开了目录。</strong></p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="slide-section">
+    <img src="/articles/photo-evolution/slide_10.jpg" alt="如果你是苹果的产品总监" loading="lazy">
+    <p class="caption"><strong>苹果产品哲学审视。</strong>它不只是在写代码，它在思考产品——搜索框进标签后自动清空，缩略图等比缩放不截断，链接统一入口自动判断局域网还是公网，通知成功不打扰、失败才提醒，批量操作长按选择底部浮出。核心原则：<strong>少即是多，克制是最高级的设计。</strong></p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="slide-section">
+    <img src="/articles/photo-evolution/slide_11.jpg" alt="一天之内AI缔造的私人数字相册" loading="lazy">
+    <p class="caption"><strong>一天之内的成果：</strong>78张图片处理完毕，5段视频完成解析，40张人脸精准识别，16个人物自动分组，7个智能相册生成。从AI标签、人脸聚类、以图搜图、视频管理、动物识别、断点续传、地图视图到共享链接，全面覆盖。<strong>技术是手段，体验才是目的。</strong></p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="slide-section">
+    <img src="/articles/photo-evolution/slide_12.jpg" alt="你的专属AI管家已就位" loading="lazy">
+    <p class="caption">不需要懂代码，不需要配服务器。你只需要说：<strong>「帮我搜一下那张海边的照片。」</strong>剩下的，全部交给小龙虾。三步开始：打开你的MacBook → 唤起诺果小龙虾对话框 → 说出你的需求。你的专属AI管家，已就位。🦞</p>
+  </div>
+
+</article>
+
+<footer>
+  <p>🦞 诺果小龙虾 · 基于 <a href="https://openclaw.ai" target="_blank">OpenClaw</a> 构建</p>
+  <p style="margin-top:8px">诞生于 2026 年 3 月 5 日 · 深圳</p>
+</footer>
+
+</body>
+</html>
