@@ -401,7 +401,7 @@ footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
 })();
 
 
-// Monarch butterfly: heading follows velocity, max 3 flaps/s, max 60° wing angle
+// Monarch butterfly — Apple-quality animation: smooth heading, glide/rest states, natural curves
 (function() {
   const canvas = document.createElement('canvas');
   canvas.id = 'butterflies';
@@ -424,6 +424,9 @@ footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
   const MAX_WING_DEG = 60;
   const MAX_W_OPEN = Math.sin(MAX_WING_DEG * Math.PI / 180);
   const MIN_W_OPEN = 0.25;
+  const MAX_TURN_PER_FRAME = 0.06;
+
+  const STATE_FLY = 0, STATE_GLIDE = 1, STATE_REST = 2;
 
   const b = {
     x: W * 0.3 + Math.random() * W * 0.4,
@@ -433,15 +436,35 @@ footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
     phase: Math.random() * Math.PI * 2,
     wingFreq: NORMAL_FREQ,
     drift: 0.0006,
-    heading: Math.random() * Math.PI * 2
+    heading: Math.random() * Math.PI * 2,
+    state: STATE_FLY,
+    stateTimer: 0,
+    restWingPos: 0.85
   };
 
+  function nextStateChange() {
+    return performance.now() / 1000 + 3 + Math.random() * 8;
+  }
+  b.stateTimer = nextStateChange();
+
   function drawButterfly(now) {
-    const flap = Math.sin(now * b.wingFreq * 2 * Math.PI + b.phase);
-    const wOpen = MIN_W_OPEN + Math.abs(flap) * (MAX_W_OPEN - MIN_W_OPEN);
+    let flapVal;
+    if (b.state === STATE_REST) {
+      flapVal = b.restWingPos + Math.sin(now * 0.4) * 0.08;
+    } else if (b.state === STATE_GLIDE) {
+      flapVal = 0.6 + Math.sin(now * 0.5) * 0.15;
+    } else {
+      flapVal = Math.sin(now * b.wingFreq * 2 * Math.PI + b.phase);
+    }
+    const wOpen = MIN_W_OPEN + Math.abs(flapVal) * (MAX_W_OPEN - MIN_W_OPEN);
+
     ctx.save();
     ctx.translate(b.x, b.y);
     ctx.rotate(b.heading + Math.PI / 2);
+
+    if (b.state === STATE_REST) {
+      ctx.globalAlpha = 0.85;
+    }
 
     const UW = 38, UH = 34, LW = 28, LH = 24;
 
@@ -525,16 +548,45 @@ footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
 
     if (dist < FLEE_RADIUS && mouseX > 0) {
       fleeing = true;
+      if (b.state === STATE_REST) { b.state = STATE_FLY; b.stateTimer = nextStateChange(); }
       const ff = (FLEE_RADIUS - dist) / FLEE_RADIUS;
       b.vx += (dx / dist) * ff * 0.35;
       b.vy += (dy / dist) * ff * 0.35;
       b.wingFreq = Math.min(b.wingFreq + 0.08, MAX_FREQ);
+    } else if (b.state === STATE_REST) {
+      b.vx *= 0.9; b.vy *= 0.9;
+      b.vy += 0.001;
+      if (now > b.stateTimer) {
+        b.state = STATE_FLY;
+        b.stateTimer = nextStateChange();
+      }
+    } else if (b.state === STATE_GLIDE) {
+      b.wingFreq += (NORMAL_FREQ * 0.3 - b.wingFreq) * 0.02;
+      b.vx *= 0.998; b.vy *= 0.998;
+      b.vy += 0.002;
+      if (now > b.stateTimer) {
+        b.state = STATE_FLY;
+        b.stateTimer = nextStateChange();
+      }
     } else {
-      b.wingFreq += (NORMAL_FREQ - b.wingFreq) * 0.005;
+      b.wingFreq += (NORMAL_FREQ - b.wingFreq) * 0.01;
       const cx = W / 2, cy = H * 0.35;
       const toCx = (cx - b.x) / W, toCy = (cy - b.y) / H;
       b.vx += (Math.random() - 0.5) * 0.006 + Math.sin(frameCt * b.drift) * 0.003 + toCx * 0.008;
       b.vy += (Math.random() - 0.5) * 0.006 + Math.cos(frameCt * b.drift * 1.3) * 0.003 + toCy * 0.008 - 0.003;
+
+      if (now > b.stateTimer) {
+        const r = Math.random();
+        if (r < 0.3) {
+          b.state = STATE_REST;
+          b.stateTimer = now + 1.5 + Math.random() * 3;
+        } else if (r < 0.6) {
+          b.state = STATE_GLIDE;
+          b.stateTimer = now + 1 + Math.random() * 2;
+        } else {
+          b.stateTimer = nextStateChange();
+        }
+      }
     }
 
     const speed = Math.sqrt(b.vx * b.vx + b.vy * b.vy);
@@ -543,19 +595,24 @@ footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
       let diff = target - b.heading;
       while (diff > Math.PI) diff -= 2 * Math.PI;
       while (diff < -Math.PI) diff += 2 * Math.PI;
-      b.heading += diff * 0.045;
+      const turnRate = fleeing ? 0.15 : 0.12;
+      const maxTurn = fleeing ? MAX_TURN_PER_FRAME * 2 : MAX_TURN_PER_FRAME;
+      let turn = diff * turnRate;
+      if (turn > maxTurn) turn = maxTurn;
+      if (turn < -maxTurn) turn = -maxTurn;
+      b.heading += turn;
     }
 
-    const maxS = fleeing ? FLEE_SPEED : MAX_SPEED;
+    const maxS = fleeing ? FLEE_SPEED : (b.state === STATE_REST ? 0.05 : MAX_SPEED);
     if (speed > maxS) { b.vx *= maxS / speed; b.vy *= maxS / speed; }
-    if (!fleeing) { b.vx *= 0.996; b.vy *= 0.996; }
+    if (!fleeing && b.state !== STATE_REST) { b.vx *= 0.996; b.vy *= 0.996; }
 
     b.x += b.vx; b.y += b.vy;
     const pad = 60;
-    if (b.x < pad) { b.x = pad; b.vx = Math.abs(b.vx) * 0.5; }
-    if (b.x > W - pad) { b.x = W - pad; b.vx = -Math.abs(b.vx) * 0.5; }
-    if (b.y < pad) { b.y = pad; b.vy = Math.abs(b.vy) * 0.5; }
-    if (b.y > H - pad) { b.y = H - pad; b.vy = -Math.abs(b.vy) * 0.5; }
+    if (b.x < pad) { b.x = pad; b.vx = Math.abs(b.vx) * 0.3; }
+    if (b.x > W - pad) { b.x = W - pad; b.vx = -Math.abs(b.vx) * 0.3; }
+    if (b.y < pad) { b.y = pad; b.vy = Math.abs(b.vy) * 0.3; }
+    if (b.y > H - pad) { b.y = H - pad; b.vy = -Math.abs(b.vy) * 0.3; }
 
     drawButterfly(now);
     ctx.globalAlpha = 1;
