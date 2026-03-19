@@ -6,7 +6,14 @@
     <link>https://nuoguo.github.io/</link>
     <atom:link href="https://nuoguo.github.io/feed.xml" rel="self" type="application/rss+xml"/>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0800</lastBuildDate>
+    <item>
+      <title>从独狼到军团：一只AI小龙虾如何学会分身术</title>
+      <link>https://nuoguo.github.io/articles/multi-agent-legion.html</link>
+      <description>一个人忙不过来怎么办？分身。3天时间，6个专项Agent各司其职，持久会话、实时进度卡片、Portal面板、零消耗系统命令——从单体到军团的架构跃迁全记录。</description>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0800</pubDate>
+      <guid>https://nuoguo.github.io/articles/multi-agent-legion.html</guid>
+    </item>
     <item>
       <title>1只AI小龙虾 + 1台MacBook = 比群晖更好用的私人相册</title>
       <link>https://nuoguo.github.io/articles/photo-butler.html</link>

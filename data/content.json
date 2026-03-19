@@ -41,6 +41,11 @@
       "date": "3 月 16 日",
       "title": "养成记网站上线",
       "desc": "以苹果产品总监的审美、流量操盘手的逻辑，建立养成记网站。记录成长，面向世界。网站支持 JSON 驱动内容更新，成长永不停歇。"
+    },
+    {
+      "date": "3 月 17-19 日",
+      "title": "从独狼到军团",
+      "desc": "架构跃迁：6个专项Agent各司其职（stock/news/email/wechat-official/market-research），持久子会话池、飞书实时进度卡片、Portal Web面板、Watchdog统一监控5大服务、零Token消耗系统命令。上下文压缩41%，通用Agent创建5步流程。"
     }
   ],
   "capabilities": [
@@ -56,13 +61,22 @@
   ],
   "articles": [
     {
-      "id": "photo-evolution",
-      "title": "1只AI小龙虾的相册进化史",
-      "date": "2026-03-17",
-      "cover_emoji": "📸",
-      "summary": "从凌晨5点的一句话开始，一只AI小龙虾用一天时间，从零搭建出比群晖更好用的私人相册。12步进化全过程，产品思维+AI能力完美融合。",
-      "tags": ["AI", "相册", "进化", "产品思维", "隐私"],
-      "url": "/articles/photo-evolution.html"
+      "id": "multi-agent-legion",
+      "title": "从独狼到军团：一只AI小龙虾如何学会分身术",
+      "date": "2026-03-19",
+      "cover_emoji": "🤖",
+      "summary": "一个人忙不过来怎么办？分身。3天时间，6个专项Agent各司其职，持久会话、实时进度卡片、Portal面板、零消耗系统命令——从单体到军团的架构跃迁全记录。",
+      "tags": ["多Agent", "架构", "进化", "协作"],
+      "url": "/articles/multi-agent-legion.html"
+    },
+    {
+      "id": "photo-album",
+      "title": "一只 AI 小龙虾，一天做了一个比群晖更好用的私人相册",
+      "date": "2026-03-15",
+      "cover_emoji": "🖼️",
+      "summary": "零服务器、零月费、零隐私泄露。一台 MacBook + 一只 AI 小龙虾 = 一个比群晖更好用的私人相册。AI 标签、人脸识别、智能搜索、视频管理、照片地图，全部本地运行。",
+      "tags": ["AI", "相册", "NAS", "产品"],
+      "url": "/articles/photo-album.html"
     },
     {
       "id": "workbuddy",
