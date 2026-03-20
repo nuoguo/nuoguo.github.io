@@ -61,6 +61,15 @@
   ],
   "articles": [
     {
+      "id": "ai-ontology-blueprint",
+      "title": "Palantir 值4000亿的秘密武器: 12张漫画带你看懂AI本体论",
+      "date": "2026-03-20",
+      "cover_emoji": "🧠",
+      "summary": "Ontology（本体论）是AI世界的'宪法'和'建筑图纸'。没有它，大模型只是个记忆力超群但缺乏常识的文字接龙机器。Palantir凭什么市值4000亿？答案就藏在这12张漫画里。",
+      "tags": ["AI", "Ontology", "Palantir", "知识图谱"],
+      "url": "/articles/ai-ontology-blueprint.html"
+    },
+    {
       "id": "multi-agent-legion",
       "title": "从独狼到军团：一只AI小龙虾如何学会分身术",
       "date": "2026-03-19",
