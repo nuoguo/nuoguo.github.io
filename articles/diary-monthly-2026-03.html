@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>投资月报 2026-03</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+         background: #0a0a0a; color: #e0e0e0; line-height: 1.8; padding: 2rem; }
+  .container { max-width: 900px; margin: 0 auto; }
+  h1 { color: #ff6b35; font-size: 1.8rem; margin-bottom: 0.5rem; }
+  h2 { color: #4ecdc4; font-size: 1.3rem; margin: 1.5rem 0 0.5rem; border-bottom: 1px solid #333; padding-bottom: 0.3rem; }
+  .meta { color: #888; font-size: 0.9rem; margin-bottom: 1.5rem; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.85rem; }
+  th { background: #1a1a2e; color: #4ecdc4; padding: 0.5rem; text-align: left; }
+  td { padding: 0.5rem; border-bottom: 1px solid #222; }
+  tr:hover td { background: #111; }
+  .buy { color: #4ecdc4; font-weight: bold; }
+  .sell { color: #ff6b6b; font-weight: bold; }
+  .hold { color: #ffd93d; }
+  .score-high { color: #4ecdc4; }
+  .score-mid { color: #ffd93d; }
+  .score-low { color: #ff6b6b; }
+  .accuracy { font-size: 1.5rem; color: #4ecdc4; font-weight: bold; }
+  .summary { background: #111; padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+  .back { color: #4ecdc4; text-decoration: none; display: inline-block; margin-bottom: 1rem; }
+  .back:hover { text-decoration: underline; }
+  ul { padding-left: 1.5rem; }
+  li { margin: 0.3rem 0; }
+  .disclaimer { color: #666; font-size: 0.8rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #222; }
+  #lock-screen { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; }
+  #lock-screen h2 { color: #ff6b35; margin-bottom: 1rem; }
+  #lock-screen input { background: #1a1a2e; border: 1px solid #333; color: #e0e0e0; padding: 0.8rem 1.2rem;
+    font-size: 1rem; border-radius: 6px; width: 260px; text-align: center; }
+  #lock-screen input:focus { outline: none; border-color: #4ecdc4; }
+  #lock-screen button { background: #4ecdc4; color: #0a0a0a; border: none; padding: 0.7rem 2rem;
+    font-size: 1rem; border-radius: 6px; cursor: pointer; margin-top: 0.8rem; font-weight: bold; }
+  #lock-screen button:hover { background: #3dbdb5; }
+  #lock-screen .error { color: #ff6b6b; margin-top: 0.5rem; display: none; }
+  #diary-content { display: none; }
+</style>
+</head>
+<body>
+<div class="container">
+<div id="lock-screen">
+  <h2>🔒 投资日记</h2>
+  <p style="color:#888;margin-bottom:1rem;">请输入访问密码</p>
+  <input type="password" id="pwd-input" placeholder="密码" autofocus>
+  <button onclick="unlock()">进入</button>
+  <p class="error" id="pwd-error">密码错误</p>
+</div>
+<div id="diary-content">
+<a href="/articles/investment-diary.html" class="back">< 返回投资日记</a>
+<h1>投资月报 2026-03</h1>
+<div class="meta">共 7 个交易日</div>
+<h2>2026-03-20</h2>
+<h1>投资日记 2026-03-20</h1>
+<h2>盘前建议 (09:15)</h2>
+<h3>市场环境</h3>
+<li>大盘评分: 20/100</li>
+<li>环境因素: 上证均线空头, 大盘跌-1.4%, 上证4007点</li>
+<h3>评分排行</h3>
+<table>
+<tr><th>股票</th><th>代码</th><th>价格</th><th>涨跌</th><th>趋势</th><th>动量</th><th>逆向</th><th>风控</th><th>总分</th><th>信号</th><th>止损</th><th>目标</th></tr>
+<tr><td>沪电股份</td><td>002463</td><td>86.33</td><td>-5.13%</td><td>90</td><td>100</td><td>50</td><td>30</td><td>68.5</td><td class="buy">买入</td><td>76.43</td><td>101.18</td></tr>
+<tr><td>比亚迪</td><td>002594</td><td>102.31</td><td>+0.61%</td><td>90</td><td>70</td><td>35</td><td>60</td><td>62.5</td><td class="buy">买入</td><td>94.7</td><td>113.73</td></tr>
+<tr><td>小米集团</td><td>01810</td><td>36.32</td><td>+3.36%</td><td>65</td><td>65</td><td>50</td><td>50</td><td>55.2</td><td class="hold">持有</td><td>33.48</td><td>40.58</td></tr>
+<tr><td>兆易创新</td><td>603986</td><td>303.68</td><td>-2.43%</td><td>65</td><td>75</td><td>50</td><td>15</td><td>52.5</td><td class="hold">持有</td><td>272.59</td><td>350.31</td></tr>
+<tr><td>英维克</td><td>002837</td><td>104.07</td><td>-2.45%</td><td>50</td><td>65</td><td>50</td><td>30</td><td>47.8</td><td class="hold">持有</td><td>92.73</td><td>121.09</td></tr>
+<tr><td>阳光电源</td><td>300274</td><td>165.1</td><td>-0.89%</td><td>60</td><td>50</td><td>35</td><td>50</td><td>47.0</td><td class="hold">持有</td><td>148.92</td><td>189.37</td></tr>
+<tr><td>安克创新</td><td>300866</td><td>94.44</td><td>-3.44%</td><td>50</td><td>50</td><td>50</td><td>50</td><td>47.0</td><td class="hold">持有</td><td>86.96</td><td>105.66</td></tr>
+<tr><td>瑞声科技</td><td>02018</td><td>34.3</td><td>+2.63%</td><td>50</td><td>55</td><td>50</td><td>35</td><td>46.0</td><td class="hold">持有</td><td>31.32</td><td>38.77</td></tr>
+<tr><td>腾讯控股</td><td>00700</td><td>513.0</td><td>-6.81%</td><td>50</td><td>35</td><td>50</td><td>50</td><td>43.2</td><td class="sell">减仓</td><td>472.61</td><td>573.58</td></tr>
+<tr><td>昊华科技</td><td>600378</td><td>31.76</td><td>-4.94%</td><td>10</td><td>20</td><td>100</td><td>35</td><td>35.2</td><td class="sell">减仓</td><td>28.86</td><td>36.11</td></tr>
+<tr><td>影石创新</td><td>688775</td><td>203.17</td><td>-3.66%</td><td>10</td><td>50</td><td>50</td><td>50</td><td>35.0</td><td class="sell">减仓</td><td>184.17</td><td>231.68</td></tr>
+<tr><td>云铝股份</td><td>000807</td><td>29.1</td><td>-5.95%</td><td>10</td><td>35</td><td>90</td><td>15</td><td>34.0</td><td class="sell">强卖</td><td>24.84</td><td>35.49</td></tr>
+<tr><td>阿里巴巴</td><td>09988</td><td>132.0</td><td>-4.14%</td><td>20</td><td>40</td><td>50</td><td>35</td><td>33.2</td><td class="sell">强卖</td><td>121.1</td><td>148.35</td></tr>
+<tr><td>航天彩虹</td><td>002389</td><td>23.43</td><td>-0.64%</td><td>10</td><td>45</td><td>65</td><td>15</td><td>31.5</td><td class="sell">强卖</td><td>20.38</td><td>28.0</td></tr>
+<tr><td>恒玄科技</td><td>688608</td><td>171.52</td><td>-2.27%</td><td>0</td><td>20</td><td>95</td><td>35</td><td>31.2</td><td class="sell">强卖</td><td>158.06</td><td>191.71</td></tr>
+</table>
+<h3>重点关注（买入信号）</h3>
+<li>沪电股份(68.5分): 均线完美多头排列 | MA20上行(+4.3%) | 5日涨13.1%强势</li>
+<li>比亚迪(62.5分): 均线完美多头排列 | MA20上行(+2.6%) | 20日涨10.9%</li>
+<h3>风险警示（卖出信号）</h3>
+<li>腾讯控股(43.2分): 5日跌-6.1%弱势</li>
+<li>昊华科技(35.2分): 均线空头排列 | 接近10日新低(31.61) | 5日跌-8.8%弱势</li>
+<li>影石创新(35.0分): 均线空头排列 | 接近10日新低(202.00)</li>
+<li>云铝股份(34.0分): 均线空头排列 | 接近10日新低(28.90) | 5日跌-17.4%弱势</li>
+<li>阿里巴巴(33.2分): 均线空头排列 | MA20下行(-3.2%) | 20日跌-14.7%</li>
+<li>航天彩虹(31.5分): 均线空头排列 | 接近10日新低(23.09) | 严重缩量</li>
+<li>恒玄科技(31.2分): 均线空头排列 | 接近10日新低(170.01) | MA20下行(-3.4%)</li>
+<h3>逆向机会（冯柳弱者体系）</h3>
+<p>以下标的虽整体评分不高，但逆向指标显示存在超跌反弹机会：</p>
+<table>
+<tr><th>股票</th><th>逆向得分</th><th>总分</th><th>信号</th><th>逆向理由</th></tr>
+<tr><td>昊华科技</td><td>100</td><td>35.2</td><td class="sell">减仓</td><td>偏离MA20达-11.8%，超跌修复概率高, RSI=22超卖, 连跌7天，极度恐慌</td></tr>
+<tr><td>恒玄科技</td><td>95</td><td>31.2</td><td class="sell">强卖</td><td>偏离MA20达-10.3%，超跌修复概率高, RSI=19超卖</td></tr>
+<tr><td>云铝股份</td><td>90</td><td>34.0</td><td class="sell">强卖</td><td>偏离MA20达-10.4%，超跌修复概率高, 连跌5天，极度恐慌</td></tr>
+<tr><td>航天彩虹</td><td>65</td><td>31.5</td><td class="sell">强卖</td><td>偏离MA20-6.9%，逆向关注</td></tr>
+</table>
+<p><strong>逆向分析总结：</strong></p>
+<p>今日 <strong>昊华科技、恒玄科技、云铝股份</strong> 出现极端超跌信号：</p>
+<li>昊华科技：股价偏离20日均线-11.8%，RSI仅22（低于超卖线30），已连续下跌7个交易日。历史上类似偏离水平往往伴随技术性超跌反弹。</li>
+<li>恒玄科技：股价偏离20日均线-10.3%，RSI仅19（低于超卖线30）。历史上类似偏离水平往往伴随技术性超跌反弹。</li>
+<li>云铝股份：股价偏离20日均线-10.4%，已连续下跌5个交易日。历史上类似偏离水平往往伴随技术性超跌反弹。</li>
+<p><strong>航天彩虹</strong> 也进入逆向关注区间，但信号强度稍弱，建议持续跟踪。</p>
+<p>需特别注意：当前大盘环境评分仅 20/100，整体偏弱。逆向操作应更加谨慎，建议等待大盘企稳或个股出现明确止跌信号（如放量阳线、RSI从超卖区拐头向上）后再考虑介入。</p>
+<blockquote style="background:#1a1a2e;border-left:3px solid #ff6b35;padding:0.8rem 1rem;margin:1rem 0;border-radius:4px;">⚠️ 逆向机会风险较高，建议：1) 小仓位试探(5%以下) 2) 等待止跌确认信号（放量阳线/RSI拐头）3) 严格止损</blockquote>
+<hr>
+<h2>收盘复盘 (18:00)</h2>
+<h3>市场收盘</h3>
+<li>大盘评分: 20/100</li>
+<li>环境因素: 上证均线空头, 大盘跌-1.2%, 上证3957点</li>
+<h3>收盘评分</h3>
+<table>
+<tr><th>股票</th><th>代码</th><th>收盘价</th><th>涨跌</th><th>趋势</th><th>动量</th><th>逆向</th><th>风控</th><th>总分</th><th>信号</th></tr>
+<tr><td>安克创新</td><td>300866</td><td>106.58</td><td>+12.85%</td><td>85</td><td>75</td><td>50</td><td>50</td><td>63.8</td><td class="buy">买入</td></tr>
+<tr><td>比亚迪</td><td>002594</td><td>102.31</td><td>+0.61%</td><td>90</td><td>70</td><td>35</td><td>60</td><td>62.5</td><td class="buy">买入</td></tr>
+<tr><td>沪电股份</td><td>002463</td><td>84.3</td><td>-2.35%</td><td>60</td><td>90</td><td>50</td><td>30</td><td>57.0</td><td class="hold">持有</td></tr>
+<tr><td>英维克</td><td>002837</td><td>105.0</td><td>+0.89%</td><td>65</td><td>75</td><td>50</td><td>30</td><td>54.8</td><td class="hold">持有</td></tr>
+<tr><td>兆易创新</td><td>603986</td><td>303.68</td><td>-2.43%</td><td>65</td><td>75</td><td>50</td><td>15</td><td>52.5</td><td class="hold">持有</td></tr>
+<tr><td>阳光电源</td><td>300274</td><td>173.6</td><td>+5.15%</td><td>65</td><td>65</td><td>35</td><td>30</td><td>49.2</td><td class="hold">持有</td></tr>
+<tr><td>小米集团</td><td>01810</td><td>33.2</td><td>-8.59%</td><td>30</td><td>60</td><td>50</td><td>50</td><td>43.5</td><td class="sell">减仓</td></tr>
+<tr><td>瑞声科技</td><td>02018</td><td>32.22</td><td>-6.06%</td><td>20</td><td>45</td><td>65</td><td>35</td><td>37.5</td><td class="sell">减仓</td></tr>
+<tr><td>腾讯控股</td><td>00700</td><td>508.0</td><td>-0.97%</td><td>30</td><td>35</td><td>50</td><td>50</td><td>37.2</td><td class="sell">减仓</td></tr>
+<tr><td>昊华科技</td><td>600378</td><td>31.5</td><td>-0.82%</td><td>10</td><td>20</td><td>100</td><td>35</td><td>35.2</td><td class="sell">减仓</td></tr>
+<tr><td>云铝股份</td><td>000807</td><td>28.38</td><td>-2.47%</td><td>10</td><td>35</td><td>90</td><td>15</td><td>34.0</td><td class="sell">强卖</td></tr>
+<tr><td>影石创新</td><td>688775</td><td>194.75</td><td>-4.14%</td><td>10</td><td>20</td><td>85</td><td>35</td><td>32.2</td><td class="sell">强卖</td></tr>
+<tr><td>恒玄科技</td><td>688608</td><td>168.0</td><td>-2.05%</td><td>0</td><td>20</td><td>95</td><td>35</td><td>31.2</td><td class="sell">强卖</td></tr>
+<tr><td>航天彩虹</td><td>002389</td><td>22.28</td><td>-4.91%</td><td>10</td><td>35</td><td>75</td><td>15</td><td>31.0</td><td class="sell">强卖</td></tr>
+<tr><td>阿里巴巴</td><td>09988</td><td>123.7</td><td>-6.29%</td><td>0</td><td>20</td><td>65</td><td>35</td><td>25.2</td><td class="sell">强卖</td></tr>
+</table>
+<h3>预测准确性</h3>
+<p>准确率: 10/15 (67%)</p>
+<li>沪电股份: 买入 -> -2.35% 偏差</li>
+<li>比亚迪: 买入 -> +0.61% 正确</li>
+<li>小米集团: 持有 -> -8.59% 偏差</li>
+<li>兆易创新: 持有 -> -2.43% 正确</li>
+<li>英维克: 持有 -> +0.89% 正确</li>
+<li>阳光电源: 持有 -> +5.15% 偏差</li>
+<li>安克创新: 持有 -> +12.85% 偏差</li>
+<li>瑞声科技: 持有 -> -6.06% 偏差</li>
+<li>腾讯控股: 减仓 -> -0.97% 正确</li>
+<li>昊华科技: 减仓 -> -0.82% 正确</li>
+<li>影石创新: 减仓 -> -4.14% 正确</li>
+<li>云铝股份: 强卖 -> -2.47% 正确</li>
+<li>阿里巴巴: 强卖 -> -6.29% 正确</li>
+<li>航天彩虹: 强卖 -> -4.91% 正确</li>
+<li>恒玄科技: 强卖 -> -2.05% 正确</li>
+<h3>复盘总结</h3>
+<p>📋 收盘复盘 | 2026-03-20</p>
+<p>大盘收盘: 20/100 (上证均线空头, 大盘跌-1.2%, 上证3957点)</p>
+<p>预测 vs 实际:</p>
+<p>股票 | 早盘信号 | 收盘涨跌 | 收盘信号 | 评价</p>
+<p>沪电股份: 买入 -> 📉-2.35% [收盘持有] 误判</p>
+<p>比亚迪: 买入 -> 📈+0.61% [收盘买入] 正确</p>
+<p>小米集团: 持有 -> 📉-8.59% [收盘减仓] 中性</p>
+<p>兆易创新: 持有 -> 📉-2.43% [收盘持有] 正确</p>
+<p>英维克: 持有 -> 📈+0.89% [收盘持有] 正确</p>
+<p>阳光电源: 持有 -> 📈+5.15% [收盘持有] 中性</p>
+<p>安克创新: 持有 -> 📈+12.85% [收盘买入] 中性</p>
+<p>瑞声科技: 持有 -> 📉-6.06% [收盘减仓] 中性</p>
+<p>腾讯控股: 减仓 -> 📉-0.97% [收盘减仓] 正确</p>
+<p>昊华科技: 减仓 -> 📉-0.82% [收盘减仓] 正确</p>
+<p>影石创新: 减仓 -> 📉-4.14% [收盘强卖] 正确</p>
+<p>云铝股份: 强卖 -> 📉-2.47% [收盘强卖] 正确</p>
+<p>阿里巴巴: 强卖 -> 📉-6.29% [收盘强卖] 正确</p>
+<p>航天彩虹: 强卖 -> 📉-4.91% [收盘强卖] 正确</p>
+<p>恒玄科技: 强卖 -> 📉-2.05% [收盘强卖] 正确</p>
+<p>今日准确率: 10/15 (67%)</p>
+<p>今日领涨: 安克创新(+12.85%), 阳光电源(+5.15%), 英维克(+0.89%)</p>
+<p>今日领跌: 小米集团(-8.59%), 阿里巴巴(-6.29%), 瑞声科技(-6.06%)</p>
+<h3>反思与改进</h3>
+<em>(待手动填写)</em>
+<hr>
+<em>收盘更新: 2026-03-20 18:00:27</em>
+<h2>2026-03-23</h2>
+<h1>投资日记 2026-03-23</h1>
+<h2>收盘复盘 (19:51)</h2>
+<h3>市场收盘</h3>
+<li>大盘评分: 20/100</li>
+<li>环境因素: 上证均线空头, 大盘跌-3.6%, 上证3813点</li>
+<h3>收盘评分</h3>
+<table>
+<tr><th>股票</th><th>代码</th><th>收盘价</th><th>涨跌</th><th>趋势</th><th>动量</th><th>逆向</th><th>风控</th><th>总分</th><th>信号</th></tr>
+<tr><td>比亚迪</td><td>002594</td><td>103.03</td><td>+0.70%</td><td>90</td><td>70</td><td>50</td><td>60</td><td>65.5</td><td class="buy">买入</td></tr>
+<tr><td>安克创新</td><td>300866</td><td>110.67</td><td>+3.84%</td><td>85</td><td>90</td><td>40</td><td>50</td><td>65.5</td><td class="buy">买入</td></tr>
+<tr><td>沪电股份</td><td>002463</td><td>80.24</td><td>-4.82%</td><td>60</td><td>75</td><td>58</td><td>30</td><td>54.9</td><td class="hold">持有</td></tr>
+<tr><td>阳光电源</td><td>300274</td><td>173.6</td><td>+5.15%</td><td>65</td><td>65</td><td>35</td><td>30</td><td>49.2</td><td class="hold">持有</td></tr>
+<tr><td>兆易创新</td><td>603986</td><td>290.2</td><td>-4.44%</td><td>50</td><td>65</td><td>50</td><td>15</td><td>45.5</td><td class="hold">持有</td></tr>
+<tr><td>小米集团</td><td>01810</td><td>32.06</td><td>-3.43%</td><td>30</td><td>30</td><td>65</td><td>50</td><td>39.0</td><td class="sell">减仓</td></tr>
+<tr><td>瑞声科技</td><td>02018</td><td>32.0</td><td>-0.68%</td><td>20</td><td>45</td><td>65</td><td>35</td><td>37.5</td><td class="sell">减仓</td></tr>
+<tr><td>腾讯控股</td><td>00700</td><td>498.4</td><td>-1.89%</td><td>10</td><td>35</td><td>73</td><td>50</td><td>35.9</td><td class="sell">减仓</td></tr>
+<tr><td>云铝股份</td><td>000807</td><td>28.38</td><td>-2.47%</td><td>10</td><td>35</td><td>90</td><td>15</td><td>34.0</td><td class="sell">强卖</td></tr>
+<tr><td>英维克</td><td>002837</td><td>98.0</td><td>-6.67%</td><td>30</td><td>20</td><td>65</td><td>30</td><td>33.5</td><td class="sell">强卖</td></tr>
+<tr><td>昊华科技</td><td>600378</td><td>29.87</td><td>-5.17%</td><td>0</td><td>20</td><td>100</td><td>35</td><td>32.2</td><td class="sell">强卖</td></tr>
+<tr><td>恒玄科技</td><td>688608</td><td>157.94</td><td>-5.99%</td><td>0</td><td>20</td><td>100</td><td>35</td><td>32.2</td><td class="sell">强卖</td></tr>
+<tr><td>影石创新</td><td>688775</td><td>181.15</td><td>-6.98%</td><td>0</td><td>20</td><td>100</td><td>35</td><td>32.2</td><td class="sell">强卖</td></tr>
+<tr><td>阿里巴巴</td><td>09988</td><td>119.7</td><td>-3.23%</td><td>0</td><td>30</td><td>83</td><td>35</td><td>31.4</td><td class="sell">强卖</td></tr>
+<tr><td>航天彩虹</td><td>002389</td><td>20.95</td><td>-5.97%</td><td>10</td><td>20</td><td>83</td><td>15</td><td>28.9</td><td class="sell">强卖</td></tr>
+</table>
+<h3>复盘总结</h3>
+<p>📋 收盘复盘 | 2026-03-23</p>
+<p>大盘收盘: 20/100 (上证均线空头, 大盘跌-3.6%, 上证3813点)</p>
+<p>(无早盘快照，仅展示收盘评分)</p>
+<p>比亚迪 ¥103.03 (+0.70%) [买入] 65.5分</p>
+<p>安克创新 ¥110.67 (+3.84%) [买入] 65.5分</p>
+<p>沪电股份 ¥80.24 (-4.82%) [持有] 54.9分</p>
+<p>阳光电源 ¥173.6 (+5.15%) [持有] 49.2分</p>
+<p>兆易创新 ¥290.2 (-4.44%) [持有] 45.5分</p>
+<p>小米集团 ¥32.06 (-3.43%) [减仓] 39.0分</p>
+<p>瑞声科技 ¥32.0 (-0.68%) [减仓] 37.5分</p>
+<p>腾讯控股 ¥498.4 (-1.89%) [减仓] 35.9分</p>
+<p>云铝股份 ¥28.38 (-2.47%) [强卖] 34.0分</p>
+<p>英维克 ¥98.0 (-6.67%) [强卖] 33.5分</p>
+<p>昊华科技 ¥29.87 (-5.17%) [强卖] 32.2分</p>
+<p>恒玄科技 ¥157.94 (-5.99%) [强卖] 32.2分</p>
+<p>影石创新 ¥181.15 (-6.98%) [强卖] 32.2分</p>
+<p>阿里巴巴 ¥119.7 (-3.23%) [强卖] 31.4分</p>
+<p>航天彩虹 ¥20.95 (-5.97%) [强卖] 28.9分</p>
+<p>今日领涨: 阳光电源(+5.15%), 安克创新(+3.84%), 比亚迪(+0.70%)</p>
+<p>今日领跌: 影石创新(-6.98%), 英维克(-6.67%), 恒玄科技(-5.99%)</p>
+<h3>反思与改进</h3>
+<em>(待手动填写)</em>
+<hr>
+<em>收盘更新: 2026-03-23 19:51:39</em>
+<h2>2026-03-24</h2>
+<h1>投资日记 2026-03-24</h1>
+<h2>盘前建议 (08:39)</h2>
+<h3>市场环境</h3>
+<li>大盘评分: 20/100</li>
+<li>环境因素: 上证均线空头, 大盘跌-3.6%, 上证3813点</li>
+<h3>评分排行</h3>
+<table>
+<tr><th>股票</th><th>代码</th><th>价格</th><th>涨跌</th><th>趋势</th><th>动量</th><th>逆向</th><th>风控</th><th>总分</th><th>信号</th><th>止损</th><th>目标</th></tr>
+<tr><td>安克创新</td><td>300866</td><td>110.67</td><td>+3.84%</td><td>85</td><td>90</td><td>40</td><td>50</td><td>65.5</td><td class="buy">买入</td><td>101.81</td><td>123.96</td></tr>
+<tr><td>比亚迪</td><td>002594</td><td>107.63</td><td>+4.46%</td><td>90</td><td>70</td><td>25</td><td>60</td><td>60.5</td><td class="buy">买入</td><td>100.14</td><td>118.87</td></tr>
+<tr><td>沪电股份</td><td>002463</td><td>80.24</td><td>-4.82%</td><td>60</td><td>75</td><td>58</td><td>30</td><td>54.9</td><td class="hold">持有</td><td>70.37</td><td>95.04</td></tr>
+<tr><td>阳光电源</td><td>300274</td><td>168.54</td><td>-2.91%</td><td>65</td><td>65</td><td>50</td><td>30</td><td>52.2</td><td class="hold">持有</td><td>150.44</td><td>195.69</td></tr>
+<tr><td>小米集团</td><td>01810</td><td>32.06</td><td>-3.43%</td><td>30</td><td>30</td><td>65</td><td>50</td><td>39.0</td><td class="sell">减仓</td><td>29.07</td><td>36.55</td></tr>
+<tr><td>腾讯控股</td><td>00700</td><td>498.4</td><td>-1.89%</td><td>10</td><td>35</td><td>73</td><td>50</td><td>35.9</td><td class="sell">减仓</td><td>458.19</td><td>558.72</td></tr>
+<tr><td>云铝股份</td><td>000807</td><td>27.3</td><td>-3.81%</td><td>10</td><td>35</td><td>90</td><td>15</td><td>34.0</td><td class="sell">强卖</td><td>23.28</td><td>33.32</td></tr>
+<tr><td>英维克</td><td>002837</td><td>98.0</td><td>-6.67%</td><td>30</td><td>20</td><td>65</td><td>30</td><td>33.5</td><td class="sell">强卖</td><td>87.3</td><td>114.05</td></tr>
+<tr><td>兆易创新</td><td>603986</td><td>273.35</td><td>-5.81%</td><td>30</td><td>20</td><td>73</td><td>15</td><td>32.9</td><td class="sell">强卖</td><td>241.84</td><td>320.61</td></tr>
+<tr><td>昊华科技</td><td>600378</td><td>29.87</td><td>-5.17%</td><td>0</td><td>20</td><td>100</td><td>35</td><td>32.2</td><td class="sell">强卖</td><td>27.2</td><td>33.88</td></tr>
+<tr><td>恒玄科技</td><td>688608</td><td>157.94</td><td>-5.99%</td><td>0</td><td>20</td><td>100</td><td>35</td><td>32.2</td><td class="sell">强卖</td><td>145.4</td><td>176.75</td></tr>
+<tr><td>影石创新</td><td>688775</td><td>181.15</td><td>-6.98%</td><td>0</td><td>20</td><td>100</td><td>35</td><td>32.2</td><td class="sell">强卖</td><td>165.84</td><td>204.12</td></tr>
+<tr><td>阿里巴巴</td><td>09988</td><td>119.7</td><td>-3.23%</td><td>0</td><td>30</td><td>83</td><td>35</td><td>31.4</td><td class="sell">强卖</td><td>108.27</td><td>136.84</td></tr>
+<tr><td>航天彩虹</td><td>002389</td><td>20.95</td><td>-5.97%</td><td>10</td><td>20</td><td>83</td><td>15</td><td>28.9</td><td class="sell">强卖</td><td>18.14</td><td>25.16</td></tr>
+</table>
+<h3>重点关注（买入信号）</h3>
+<li>安克创新(65.5分): 短期均线多头 | 接近20日新高(112.12) | 5日涨12.1%强势</li>
+<li>比亚迪(60.5分): 均线完美多头排列 | MA20上行(+2.6%) | 20日涨19.2%</li>
+<h3>风险警示（卖出信号）</h3>
+<li>小米集团(39.0分): 接近10日新低(31.62) | 5日跌-8.9%弱势 | 20日跌-12.3%</li>
+<li>腾讯控股(35.9分): 均线空头排列 | 接近10日新低(495.20) | 5日跌-10.8%弱势</li>
+<li>云铝股份(34.0分): 均线空头排列 | 接近10日新低(26.93) | 5日跌-19.4%弱势</li>
+<li>英维克(33.5分): 均线空头排列 | 5日跌-6.7%弱势 | 20日跌-13.4%</li>
+<li>兆易创新(32.9分): 接近10日新低(270.78) | 5日跌-10.7%弱势 | 20日跌-11.5%</li>
+<li>昊华科技(32.2分): 均线空头排列 | 接近10日新低(29.70) | MA20下行(-2.4%)</li>
+<li>恒玄科技(32.2分): 均线空头排列 | 接近10日新低(157.09) | MA20下行(-4.2%)</li>
+<li>影石创新(32.2分): 均线空头排列 | 接近10日新低(181.09) | MA20下行(-2.3%)</li>
+<li>阿里巴巴(31.4分): 均线空头排列 | 接近10日新低(117.70) | MA20下行(-3.5%)</li>
+<li>航天彩虹(28.9分): 均线空头排列 | 接近10日新低(20.90) | 5日跌-14.4%弱势</li>
+<h3>逆向机会（冯柳弱者体系）</h3>
+<p>以下标的虽整体评分不高，但逆向指标显示存在超跌反弹机会：</p>
+<table>
+<tr><th>股票</th><th>逆向得分</th><th>总分</th><th>信号</th><th>逆向理由</th></tr>
+<tr><td>昊华科技</td><td>100</td><td>32.2</td><td class="sell">强卖</td><td>偏离MA20达-15.8%，超跌修复概率高, RSI=14超卖, 连跌9天，极度恐慌</td></tr>
+<tr><td>恒玄科技</td><td>100</td><td>32.2</td><td class="sell">强卖</td><td>偏离MA20达-15.3%，超跌修复概率高, RSI=20超卖, 连跌3天</td></tr>
+<tr><td>影石创新</td><td>100</td><td>32.2</td><td class="sell">强卖</td><td>偏离MA20达-13.8%，超跌修复概率高, RSI=27超卖, 连跌3天</td></tr>
+<tr><td>云铝股份</td><td>90</td><td>34.0</td><td class="sell">强卖</td><td>偏离MA20达-15.2%，超跌修复概率高, 连跌7天，极度恐慌</td></tr>
+<tr><td>阿里巴巴</td><td>83</td><td>31.4</td><td class="sell">强卖</td><td>偏离MA20达-10.7%，超跌修复概率高, 连跌3天</td></tr>
+<tr><td>航天彩虹</td><td>83</td><td>28.9</td><td class="sell">强卖</td><td>偏离MA20达-16.1%，超跌修复概率高, 连跌3天</td></tr>
+<tr><td>腾讯控股</td><td>73</td><td>35.9</td><td class="sell">减仓</td><td>偏离MA20-5.2%，逆向关注, 连跌3天</td></tr>
+<tr><td>兆易创新</td><td>73</td><td>32.9</td><td class="sell">强卖</td><td>偏离MA20-6.3%，逆向关注, 连跌3天</td></tr>
+<tr><td>小米集团</td><td>65</td><td>39.0</td><td class="sell">减仓</td><td>偏离MA20-5.5%，逆向关注</td></tr>
+<tr><td>英维克</td><td>65</td><td>33.5</td><td class="sell">强卖</td><td>偏离MA20-5.4%，逆向关注</td></tr>
+</table>
+<p><strong>逆向分析总结：</strong></p>
+<p>今日 <strong>昊华科技、恒玄科技、影石创新、云铝股份</strong> 出现极端超跌信号：</p>
+<li>昊华科技：股价偏离20日均线-15.8%，RSI仅14（低于超卖线30），已连续下跌9个交易日。历史上类似偏离水平往往伴随技术性超跌反弹。</li>
+<li>恒玄科技：股价偏离20日均线-15.3%，RSI仅20（低于超卖线30），已连续下跌3个交易日。历史上类似偏离水平往往伴随技术性超跌反弹。</li>
+<li>影石创新：股价偏离20日均线-13.8%，RSI仅27（低于超卖线30），已连续下跌3个交易日。历史上类似偏离水平往往伴随技术性超跌反弹。</li>
+<li>云铝股份：股价偏离20日均线-15.2%，已连续下跌7个交易日。历史上类似偏离水平往往伴随技术性超跌反弹。</li>
+<p><strong>阿里巴巴、航天彩虹、腾讯控股、兆易创新、小米集团、英维克</strong> 也进入逆向关注区间，但信号强度稍弱，建议持续跟踪。</p>
+<p>需特别注意：当前大盘环境评分仅 20/100，整体偏弱。逆向操作应更加谨慎，建议等待大盘企稳或个股出现明确止跌信号（如放量阳线、RSI从超卖区拐头向上）后再考虑介入。</p>
+<blockquote style="background:#1a1a2e;border-left:3px solid #ff6b35;padding:0.8rem 1rem;margin:1rem 0;border-radius:4px;">⚠️ 逆向机会风险较高，建议：1) 小仓位试探(5%以下) 2) 等待止跌确认信号（放量阳线/RSI拐头）3) 严格止损</blockquote>
+<hr>
+<h2>收盘复盘 (18:00)</h2>
+<h3>市场收盘</h3>
+<li>大盘评分: 40/100</li>
+<li>环境因素: 上证均线空头, 大盘涨1.8%, 上证3881点</li>
+<h3>收盘评分</h3>
+<table>
+<tr><th>股票</th><th>代码</th><th>收盘价</th><th>涨跌</th><th>趋势</th><th>动量</th><th>逆向</th><th>风控</th><th>总分</th><th>信号</th></tr>
+<tr><td>比亚迪</td><td>002594</td><td>106.64</td><td>-0.92%</td><td>90</td><td>70</td><td>35</td><td>60</td><td>64.5</td><td class="buy">买入</td></tr>
+<tr><td>安克创新</td><td>300866</td><td>110.14</td><td>-0.48%</td><td>85</td><td>90</td><td>25</td><td>50</td><td>64.5</td><td class="buy">买入</td></tr>
+<tr><td>沪电股份</td><td>002463</td><td>80.24</td><td>-4.82%</td><td>60</td><td>75</td><td>58</td><td>30</td><td>56.9</td><td class="hold">持有</td></tr>
+<tr><td>阳光电源</td><td>300274</td><td>168.54</td><td>-2.91%</td><td>65</td><td>65</td><td>50</td><td>30</td><td>54.2</td><td class="hold">持有</td></tr>
+<tr><td>小米集团</td><td>01810</td><td>32.68</td><td>+1.93%</td><td>50</td><td>45</td><td>50</td><td>50</td><td>47.8</td><td class="hold">持有</td></tr>
+<tr><td>瑞声科技</td><td>02018</td><td>34.78</td><td>+8.69%</td><td>40</td><td>60</td><td>50</td><td>35</td><td>46.2</td><td class="hold">持有</td></tr>
+<tr><td>兆易创新</td><td>603986</td><td>273.71</td><td>+0.13%</td><td>50</td><td>20</td><td>65</td><td>30</td><td>41.5</td><td class="sell">减仓</td></tr>
+<tr><td>航天彩虹</td><td>002389</td><td>21.7</td><td>+3.58%</td><td>30</td><td>20</td><td>95</td><td>15</td><td>39.2</td><td class="sell">减仓</td></tr>
+<tr><td>昊华科技</td><td>600378</td><td>30.4</td><td>+1.77%</td><td>20</td><td>20</td><td>95</td><td>35</td><td>39.2</td><td class="sell">减仓</td></tr>
+<tr><td>恒玄科技</td><td>688608</td><td>162.06</td><td>+2.61%</td><td>20</td><td>20</td><td>95</td><td>35</td><td>39.2</td><td class="sell">减仓</td></tr>
+<tr><td>腾讯控股</td><td>00700</td><td>514.0</td><td>+3.13%</td><td>30</td><td>35</td><td>50</td><td>50</td><td>39.2</td><td class="sell">减仓</td></tr>
+<tr><td>云铝股份</td><td>000807</td><td>27.3</td><td>-3.81%</td><td>10</td><td>35</td><td>90</td><td>15</td><td>36.0</td><td class="sell">减仓</td></tr>
+<tr><td>阿里巴巴</td><td>09988</td><td>123.2</td><td>+2.92%</td><td>20</td><td>30</td><td>65</td><td>35</td><td>35.8</td><td class="sell">减仓</td></tr>
+<tr><td>英维克</td><td>002837</td><td>98.0</td><td>-6.67%</td><td>30</td><td>20</td><td>65</td><td>30</td><td>35.5</td><td class="sell">减仓</td></tr>
+<tr><td>影石创新</td><td>688775</td><td>187.34</td><td>+3.42%</td><td>20</td><td>20</td><td>75</td><td>35</td><td>35.2</td><td class="sell">减仓</td></tr>
+</table>
+<h3>预测准确性</h3>
+<p>准确率: 3/15 (20%)</p>
+<li>安克创新: 买入 -> -0.48% 偏差</li>
+<li>比亚迪: 买入 -> -0.92% 偏差</li>
+<li>沪电股份: 持有 -> -4.82% 偏差</li>
+<li>阳光电源: 持有 -> -2.91% 正确</li>
+<li>小米集团: 减仓 -> +1.93% 偏差</li>
+<li>腾讯控股: 减仓 -> +3.13% 偏差</li>
+<li>云铝股份: 强卖 -> -3.81% 正确</li>
+<li>英维克: 强卖 -> -6.67% 正确</li>
+<li>兆易创新: 强卖 -> +0.13% 偏差</li>
+<li>昊华科技: 强卖 -> +1.77% 偏差</li>
+<li>恒玄科技: 强卖 -> +2.61% 偏差</li>
+<li>影石创新: 强卖 -> +3.42% 偏差</li>
+<li>阿里巴巴: 强卖 -> +2.92% 偏差</li>
+<li>航天彩虹: 强卖 -> +3.58% 偏差</li>
+<li>瑞声科技: 数据不足 -> +8.69% 偏差</li>
+<h3>复盘总结</h3>
+<p>📋 收盘复盘 | 2026-03-24</p>
+<p>大盘收盘: 40/100 (上证均线空头, 大盘涨1.8%, 上证3881点)</p>
+<p>预测 vs 实际:</p>
+<p>股票 | 早盘信号 | 收盘涨跌 | 收盘信号 | 评价</p>
+<p>安克创新: 买入 -> 📉-0.48% [收盘买入] 中性</p>
+<p>比亚迪: 买入 -> 📉-0.92% [收盘买入] 中性</p>
+<p>沪电股份: 持有 -> 📉-4.82% [收盘持有] 中性</p>
+<p>阳光电源: 持有 -> 📉-2.91% [收盘持有] 正确</p>
+<p>小米集团: 减仓 -> 📈+1.93% [收盘持有] 中性</p>
+<p>腾讯控股: 减仓 -> 📈+3.13% [收盘减仓] 误判</p>
+<p>云铝股份: 强卖 -> 📉-3.81% [收盘减仓] 正确</p>
+<p>英维克: 强卖 -> 📉-6.67% [收盘减仓] 正确</p>
+<p>兆易创新: 强卖 -> 📈+0.13% [收盘减仓] 中性</p>
+<p>昊华科技: 强卖 -> 📈+1.77% [收盘减仓] 中性</p>
+<p>恒玄科技: 强卖 -> 📈+2.61% [收盘减仓] 误判</p>
+<p>影石创新: 强卖 -> 📈+3.42% [收盘减仓] 误判</p>
+<p>阿里巴巴: 强卖 -> 📈+2.92% [收盘减仓] 误判</p>
+<p>航天彩虹: 强卖 -> 📈+3.58% [收盘减仓] 误判</p>
+<p>瑞声科技: 数据不足 -> 📈+8.69% [收盘持有] 中性</p>
+<p>今日准确率: 3/15 (20%)</p>
+<p>今日领涨: 瑞声科技(+8.69%), 航天彩虹(+3.58%), 影石创新(+3.42%)</p>
+<p>今日领跌: 英维克(-6.67%), 沪电股份(-4.82%), 云铝股份(-3.81%)</p>
+<h3>反思与改进</h3>
+<em>(待手动填写)</em>
+<hr>
+<em>收盘更新: 2026-03-24 18:00:28</em>
+<h2>2026-03-25</h2>
+<h1>投资日记 2026-03-25</h1>
+<h2>盘前建议 (07:00)</h2>
+<h3>市场环境</h3>
+<li>大盘评分: 40/100</li>
+<li>环境因素: 上证均线空头, 大盘涨1.8%, 上证3881点</li>
+<h3>评分排行</h3>
+<table>
+<tr><th>股票</th><th>代码</th><th>价格</th><th>涨跌</th><th>趋势</th><th>动量</th><th>逆向</th><th>风控</th><th>总分</th><th>信号</th><th>止损</th><th>目标</th></tr>
+<tr><td>比亚迪</td><td>002594</td><td>106.64</td><td>-0.92%</td><td>90</td><td>70</td><td>35</td><td>60</td><td>64.5</td><td class="buy">买入</td><td>99.1</td><td>117.96</td></tr>
+<tr><td>安克创新</td><td>300866</td><td>110.14</td><td>-0.48%</td><td>85</td><td>90</td><td>25</td><td>50</td><td>64.5</td><td class="buy">买入</td><td>101.29</td><td>123.42</td></tr>
+<tr><td>沪电股份</td><td>002463</td><td>82.29</td><td>+2.55%</td><td>60</td><td>75</td><td>50</td><td>30</td><td>55.2</td><td class="hold">持有</td><td>72.45</td><td>97.05</td></tr>
+<tr><td>阳光电源</td><td>300274</td><td>164.68</td><td>-2.29%</td><td>60</td><td>50</td><td>50</td><td>30</td><td>49.0</td><td class="hold">持有</td><td>145.18</td><td>193.93</td></tr>
+<tr><td>小米集团</td><td>01810</td><td>32.68</td><td>+1.93%</td><td>50</td><td>45</td><td>50</td><td>50</td><td>47.8</td><td class="hold">持有</td><td>29.77</td><td>37.05</td></tr>
+<tr><td>瑞声科技</td><td>02018</td><td>34.78</td><td>+8.69%</td><td>40</td><td>60</td><td>50</td><td>35</td><td>46.2</td><td class="hold">持有</td><td>31.73</td><td>39.36</td></tr>
+<tr><td>云铝股份</td><td>000807</td><td>27.81</td><td>+1.87%</td><td>30</td><td>35</td><td>95</td><td>15</td><td>43.0</td><td class="sell">减仓</td><td>24.01</td><td>33.51</td></tr>
+<tr><td>兆易创新</td><td>603986</td><td>273.71</td><td>+0.13%</td><td>50</td><td>20</td><td>65</td><td>30</td><td>41.5</td><td class="sell">减仓</td><td>241.63</td><td>321.83</td></tr>
+<tr><td>英维克</td><td>002837</td><td>98.4</td><td>+0.41%</td><td>30</td><td>50</td><td>50</td><td>30</td><td>40.0</td><td class="sell">减仓</td><td>87.81</td><td>114.28</td></tr>
+<tr><td>航天彩虹</td><td>002389</td><td>21.7</td><td>+3.58%</td><td>30</td><td>20</td><td>95</td><td>15</td><td>39.2</td><td class="sell">减仓</td><td>19.21</td><td>25.43</td></tr>
+<tr><td>昊华科技</td><td>600378</td><td>30.4</td><td>+1.77%</td><td>20</td><td>20</td><td>95</td><td>35</td><td>39.2</td><td class="sell">减仓</td><td>27.85</td><td>34.22</td></tr>
+<tr><td>恒玄科技</td><td>688608</td><td>162.06</td><td>+2.61%</td><td>20</td><td>20</td><td>95</td><td>35</td><td>39.2</td><td class="sell">减仓</td><td>149.76</td><td>180.51</td></tr>
+<tr><td>腾讯控股</td><td>00700</td><td>514.0</td><td>+3.13%</td><td>30</td><td>35</td><td>50</td><td>50</td><td>39.2</td><td class="sell">减仓</td><td>473.01</td><td>575.48</td></tr>
+<tr><td>阿里巴巴</td><td>09988</td><td>123.2</td><td>+2.92%</td><td>20</td><td>30</td><td>65</td><td>35</td><td>35.8</td><td class="sell">减仓</td><td>112.17</td><td>139.74</td></tr>
+<tr><td>影石创新</td><td>688775</td><td>187.34</td><td>+3.42%</td><td>20</td><td>20</td><td>75</td><td>35</td><td>35.2</td><td class="sell">减仓</td><td>171.97</td><td>210.39</td></tr>
+</table>
+<h3>重点关注（买入信号）</h3>
+<li>比亚迪(64.5分): 均线完美多头排列 | MA20上行(+2.9%) | 20日涨17.4%</li>
+<li>安克创新(64.5分): 短期均线多头 | 接近20日新高(112.12) | 5日涨10.5%强势</li>
+<h3>风险警示（卖出信号）</h3>
+<li>云铝股份(43.0分): 均线空头排列 | 5日跌-12.8%弱势 | 偏离MA20达-13.3%，超跌修复概率高</li>
+<li>兆易创新(41.5分): 5日跌-7.5%弱势 | 20日跌-15.3% | 偏离MA20-5.4%，逆向关注</li>
+<li>英维克(40.0分): 均线空头排列 | 高波动(5.4%)</li>
+<li>航天彩虹(39.2分): 均线空头排列 | 5日跌-7.0%弱势 | 20日跌-10.2%</li>
+<li>昊华科技(39.2分): 均线空头排列 | MA20下行(-3.0%) | 5日跌-9.9%弱势</li>
+<li>恒玄科技(39.2分): 均线空头排列 | MA20下行(-4.6%) | 5日跌-7.4%弱势</li>
+<li>腾讯控股(39.2分): 均线空头排列 | 5日跌-6.5%弱势</li>
+<li>阿里巴巴(35.8分): 均线空头排列 | MA20下行(-3.7%) | 5日跌-8.5%弱势</li>
+<li>影石创新(35.2分): 均线空头排列 | MA20下行(-2.8%) | 5日跌-8.7%弱势</li>
+<h3>逆向机会（冯柳弱者体系）</h3>
+<p>以下标的虽整体评分不高，但逆向指标显示存在超跌反弹机会：</p>
+<table>
+<tr><th>股票</th><th>逆向得分</th><th>总分</th><th>信号</th><th>逆向理由</th></tr>
+<tr><td>云铝股份</td><td>95</td><td>43.0</td><td class="sell">减仓</td><td>偏离MA20达-13.3%，超跌修复概率高, RSI=28超卖</td></tr>
+<tr><td>航天彩虹</td><td>95</td><td>39.2</td><td class="sell">减仓</td><td>偏离MA20达-12.7%，超跌修复概率高, RSI=18超卖</td></tr>
+<tr><td>昊华科技</td><td>95</td><td>39.2</td><td class="sell">减仓</td><td>偏离MA20达-13.5%，超跌修复概率高, RSI=11超卖</td></tr>
+<tr><td>恒玄科技</td><td>95</td><td>39.2</td><td class="sell">减仓</td><td>偏离MA20达-12.0%，超跌修复概率高, RSI=28超卖</td></tr>
+<tr><td>影石创新</td><td>75</td><td>35.2</td><td class="sell">减仓</td><td>偏离MA20达-10.1%，超跌修复概率高</td></tr>
+<tr><td>兆易创新</td><td>65</td><td>41.5</td><td class="sell">减仓</td><td>偏离MA20-5.4%，逆向关注</td></tr>
+<tr><td>阿里巴巴</td><td>65</td><td>35.8</td><td class="sell">减仓</td><td>偏离MA20-7.3%，逆向关注</td></tr>
+</table>
+<p><strong>逆向分析总结：</strong></p>
+<p>今日 <strong>云铝股份、航天彩虹、昊华科技、恒玄科技</strong> 出现极端超跌信号：</p>
+<li>云铝股份：股价偏离20日均线-13.3%，RSI仅28（低于超卖线30）。历史上类似偏离水平往往伴随技术性超跌反弹。</li>
+<li>航天彩虹：股价偏离20日均线-12.7%，RSI仅18（低于超卖线30）。历史上类似偏离水平往往伴随技术性超跌反弹。</li>
+<li>昊华科技：股价偏离20日均线-13.5%，RSI仅11（低于超卖线30）。历史上类似偏离水平往往伴随技术性超跌反弹。</li>
+<li>恒玄科技：股价偏离20日均线-12.0%，RSI仅28（低于超卖线30）。历史上类似偏离水平往往伴随技术性超跌反弹。</li>
+<p><strong>影石创新、兆易创新、阿里巴巴</strong> 也进入逆向关注区间，但信号强度稍弱，建议持续跟踪。</p>
+<p>大盘环境中性，逆向操作需结合个股止跌信号综合判断。</p>
+<blockquote style="background:#1a1a2e;border-left:3px solid #ff6b35;padding:0.8rem 1rem;margin:1rem 0;border-radius:4px;">⚠️ 逆向机会风险较高，建议：1) 小仓位试探(5%以下) 2) 等待止跌确认信号（放量阳线/RSI拐头）3) 严格止损</blockquote>
+<hr>
+<h2>收盘复盘 (15:16)</h2>
+<h3>市场收盘</h3>
+<li>大盘评分: 60/100</li>
+<li>环境因素: 大盘涨1.3%, 上证3932点</li>
+<h3>收盘评分</h3>
+<table>
+<tr><th>股票</th><th>代码</th><th>收盘价</th><th>涨跌</th><th>趋势</th><th>动量</th><th>逆向</th><th>风控</th><th>总分</th><th>信号</th></tr>
+<tr><td>比亚迪</td><td>002594</td><td>106.64</td><td>-0.92%</td><td>90</td><td>70</td><td>35</td><td>60</td><td>66.5</td><td class="buy">买入</td></tr>
+<tr><td>安克创新</td><td>300866</td><td>110.14</td><td>-0.48%</td><td>85</td><td>90</td><td>25</td><td>50</td><td>66.5</td><td class="buy">买入</td></tr>
+<tr><td>沪电股份</td><td>002463</td><td>82.29</td><td>+2.55%</td><td>60</td><td>75</td><td>50</td><td>30</td><td>57.2</td><td class="hold">持有</td></tr>
+<tr><td>瑞声科技</td><td>02018</td><td>35.14</td><td>+1.04%</td><td>40</td><td>75</td><td>50</td><td>35</td><td>52.0</td><td class="hold">持有</td></tr>
+<tr><td>阳光电源</td><td>300274</td><td>164.68</td><td>-2.29%</td><td>60</td><td>50</td><td>50</td><td>30</td><td>51.0</td><td class="hold">持有</td></tr>
+<tr><td>云铝股份</td><td>000807</td><td>27.81</td><td>+1.87%</td><td>30</td><td>35</td><td>95</td><td>15</td><td>45.0</td><td class="hold">持有</td></tr>
+<tr><td>兆易创新</td><td>603986</td><td>273.71</td><td>+0.13%</td><td>50</td><td>20</td><td>65</td><td>30</td><td>43.5</td><td class="sell">减仓</td></tr>
+<tr><td>英维克</td><td>002837</td><td>98.4</td><td>+0.41%</td><td>30</td><td>50</td><td>50</td><td>30</td><td>42.0</td><td class="sell">减仓</td></tr>
+<tr><td>航天彩虹</td><td>002389</td><td>21.7</td><td>+3.58%</td><td>30</td><td>20</td><td>95</td><td>15</td><td>41.2</td><td class="sell">减仓</td></tr>
+<tr><td>昊华科技</td><td>600378</td><td>30.4</td><td>+1.77%</td><td>20</td><td>20</td><td>95</td><td>35</td><td>41.2</td><td class="sell">减仓</td></tr>
+<tr><td>恒玄科技</td><td>688608</td><td>162.06</td><td>+2.61%</td><td>20</td><td>20</td><td>95</td><td>35</td><td>41.2</td><td class="sell">减仓</td></tr>
+<tr><td>阿里巴巴</td><td>09988</td><td>128.1</td><td>+3.98%</td><td>40</td><td>30</td><td>50</td><td>35</td><td>40.8</td><td class="sell">减仓</td></tr>
+<tr><td>腾讯控股</td><td>00700</td><td>503.0</td><td>-2.14%</td><td>10</td><td>45</td><td>50</td><td>50</td><td>37.8</td><td class="sell">减仓</td></tr>
+<tr><td>小米集团</td><td>01810</td><td>32.12</td><td>-1.71%</td><td>10</td><td>45</td><td>50</td><td>50</td><td>37.8</td><td class="sell">减仓</td></tr>
+<tr><td>影石创新</td><td>688775</td><td>187.23</td><td>-0.06%</td><td>20</td><td>20</td><td>65</td><td>35</td><td>35.2</td><td class="sell">减仓</td></tr>
+</table>
+<h3>预测准确性</h3>
+<p>准确率: 6/15 (40%)</p>
+<li>比亚迪: 买入 -> -0.92% 偏差</li>
+<li>安克创新: 买入 -> -0.48% 偏差</li>
+<li>沪电股份: 持有 -> +2.55% 正确</li>
+<li>阳光电源: 持有 -> -2.29% 正确</li>
+<li>小米集团: 持有 -> -1.71% 正确</li>
+<li>瑞声科技: 持有 -> +1.04% 正确</li>
+<li>云铝股份: 减仓 -> +1.87% 偏差</li>
+<li>兆易创新: 减仓 -> +0.13% 偏差</li>
+<li>英维克: 减仓 -> +0.41% 偏差</li>
+<li>航天彩虹: 减仓 -> +3.58% 偏差</li>
+<li>昊华科技: 减仓 -> +1.77% 偏差</li>
+<li>恒玄科技: 减仓 -> +2.61% 偏差</li>
+<li>腾讯控股: 减仓 -> -2.14% 正确</li>
+<li>阿里巴巴: 减仓 -> +3.98% 偏差</li>
+<li>影石创新: 减仓 -> -0.06% 正确</li>
+<h3>复盘总结</h3>
+<p>📋 收盘复盘 | 2026-03-25</p>
+<p>大盘收盘: 60/100 (大盘涨1.3%, 上证3932点)</p>
+<p>预测 vs 实际:</p>
+<p>股票 | 早盘信号 | 收盘涨跌 | 收盘信号 | 评价</p>
+<p>比亚迪: 买入 -> 📉-0.92% [收盘买入] 中性</p>
+<p>安克创新: 买入 -> 📉-0.48% [收盘买入] 中性</p>
+<p>沪电股份: 持有 -> 📈+2.55% [收盘持有] 正确</p>
+<p>阳光电源: 持有 -> 📉-2.29% [收盘持有] 正确</p>
+<p>小米集团: 持有 -> 📉-1.71% [收盘减仓] 正确</p>
+<p>瑞声科技: 持有 -> 📈+1.04% [收盘持有] 正确</p>
+<p>云铝股份: 减仓 -> 📈+1.87% [收盘持有] 中性</p>
+<p>兆易创新: 减仓 -> 📈+0.13% [收盘减仓] 中性</p>
+<p>英维克: 减仓 -> 📈+0.41% [收盘减仓] 中性</p>
+<p>航天彩虹: 减仓 -> 📈+3.58% [收盘减仓] 误判</p>
+<p>昊华科技: 减仓 -> 📈+1.77% [收盘减仓] 中性</p>
+<p>恒玄科技: 减仓 -> 📈+2.61% [收盘减仓] 误判</p>
+<p>腾讯控股: 减仓 -> 📉-2.14% [收盘减仓] 正确</p>
+<p>阿里巴巴: 减仓 -> 📈+3.98% [收盘减仓] 误判</p>
+<p>影石创新: 减仓 -> 📉-0.06% [收盘减仓] 正确</p>
+<p>今日准确率: 6/15 (40%)</p>
+<p>今日领涨: 阿里巴巴(+3.98%), 航天彩虹(+3.58%), 恒玄科技(+2.61%)</p>
+<p>今日领跌: 阳光电源(-2.29%), 腾讯控股(-2.14%), 小米集团(-1.71%)</p>
+<h3>反思与改进</h3>
+<em>(待手动填写)</em>
+<hr>
+<em>收盘更新: 2026-03-25 15:16:44</em>
+<h2>收盘复盘 (18:00)</h2>
+<h3>市场收盘</h3>
+<li>大盘评分: 60/100</li>
+<li>环境因素: 大盘涨1.3%, 上证3932点</li>
+<h3>收盘评分</h3>
+<table>
+<tr><th>股票</th><th>代码</th><th>收盘价</th><th>涨跌</th><th>趋势</th><th>动量</th><th>逆向</th><th>风控</th><th>总分</th><th>信号</th></tr>
+<tr><td>比亚迪</td><td>002594</td><td>106.64</td><td>-0.92%</td><td>90</td><td>70</td><td>35</td><td>60</td><td>66.5</td><td class="buy">买入</td></tr>
+<tr><td>安克创新</td><td>300866</td><td>110.14</td><td>-0.48%</td><td>85</td><td>90</td><td>25</td><td>50</td><td>66.5</td><td class="buy">买入</td></tr>
+<tr><td>沪电股份</td><td>002463</td><td>82.29</td><td>+2.55%</td><td>60</td><td>75</td><td>50</td><td>30</td><td>57.2</td><td class="hold">持有</td></tr>
+<tr><td>瑞声科技</td><td>02018</td><td>35.26</td><td>+1.38%</td><td>55</td><td>75</td><td>50</td><td>35</td><td>56.5</td><td class="hold">持有</td></tr>
+<tr><td>阳光电源</td><td>300274</td><td>164.68</td><td>-2.29%</td><td>60</td><td>50</td><td>50</td><td>30</td><td>51.0</td><td class="hold">持有</td></tr>
+<tr><td>云铝股份</td><td>000807</td><td>27.81</td><td>+1.87%</td><td>30</td><td>35</td><td>95</td><td>15</td><td>45.0</td><td class="hold">持有</td></tr>
+<tr><td>腾讯控股</td><td>00700</td><td>505.5</td><td>-1.65%</td><td>30</td><td>45</td><td>50</td><td>50</td><td>43.8</td><td class="sell">减仓</td></tr>
+<tr><td>小米集团</td><td>01810</td><td>32.52</td><td>-0.49%</td><td>30</td><td>45</td><td>50</td><td>50</td><td>43.8</td><td class="sell">减仓</td></tr>
+<tr><td>兆易创新</td><td>603986</td><td>273.71</td><td>+0.13%</td><td>50</td><td>20</td><td>65</td><td>30</td><td>43.5</td><td class="sell">减仓</td></tr>
+<tr><td>英维克</td><td>002837</td><td>98.4</td><td>+0.41%</td><td>30</td><td>50</td><td>50</td><td>30</td><td>42.0</td><td class="sell">减仓</td></tr>
+<tr><td>航天彩虹</td><td>002389</td><td>21.7</td><td>+3.58%</td><td>30</td><td>20</td><td>95</td><td>15</td><td>41.2</td><td class="sell">减仓</td></tr>
+<tr><td>昊华科技</td><td>600378</td><td>30.4</td><td>+1.77%</td><td>20</td><td>20</td><td>95</td><td>35</td><td>41.2</td><td class="sell">减仓</td></tr>
+<tr><td>恒玄科技</td><td>688608</td><td>162.06</td><td>+2.61%</td><td>20</td><td>20</td><td>95</td><td>35</td><td>41.2</td><td class="sell">减仓</td></tr>
+<tr><td>阿里巴巴</td><td>09988</td><td>128.9</td><td>+4.63%</td><td>40</td><td>30</td><td>50</td><td>35</td><td>40.8</td><td class="sell">减仓</td></tr>
+<tr><td>影石创新</td><td>688775</td><td>187.23</td><td>-0.06%</td><td>20</td><td>20</td><td>65</td><td>35</td><td>35.2</td><td class="sell">减仓</td></tr>
+</table>
+<h3>预测准确性</h3>
+<p>准确率: 6/15 (40%)</p>
+<li>比亚迪: 买入 -> -0.92% 偏差</li>
+<li>安克创新: 买入 -> -0.48% 偏差</li>
+<li>沪电股份: 持有 -> +2.55% 正确</li>
+<li>阳光电源: 持有 -> -2.29% 正确</li>
+<li>小米集团: 持有 -> -0.49% 正确</li>
+<li>瑞声科技: 持有 -> +1.38% 正确</li>
+<li>云铝股份: 减仓 -> +1.87% 偏差</li>
+<li>兆易创新: 减仓 -> +0.13% 偏差</li>
+<li>英维克: 减仓 -> +0.41% 偏差</li>
+<li>航天彩虹: 减仓 -> +3.58% 偏差</li>
+<li>昊华科技: 减仓 -> +1.77% 偏差</li>
+<li>恒玄科技: 减仓 -> +2.61% 偏差</li>
+<li>腾讯控股: 减仓 -> -1.65% 正确</li>
+<li>阿里巴巴: 减仓 -> +4.63% 偏差</li>
+<li>影石创新: 减仓 -> -0.06% 正确</li>
+<h3>复盘总结</h3>
+<p>📋 收盘复盘 | 2026-03-25</p>
+<p>大盘收盘: 60/100 (大盘涨1.3%, 上证3932点)</p>
+<p>预测 vs 实际:</p>
+<p>股票 | 早盘信号 | 收盘涨跌 | 收盘信号 | 评价</p>
+<p>比亚迪: 买入 -> 📉-0.92% [收盘买入] 中性</p>
+<p>安克创新: 买入 -> 📉-0.48% [收盘买入] 中性</p>
+<p>沪电股份: 持有 -> 📈+2.55% [收盘持有] 正确</p>
+<p>阳光电源: 持有 -> 📉-2.29% [收盘持有] 正确</p>
+<p>小米集团: 持有 -> 📉-0.49% [收盘减仓] 正确</p>
+<p>瑞声科技: 持有 -> 📈+1.38% [收盘持有] 正确</p>
+<p>云铝股份: 减仓 -> 📈+1.87% [收盘持有] 中性</p>
+<p>兆易创新: 减仓 -> 📈+0.13% [收盘减仓] 中性</p>
+<p>英维克: 减仓 -> 📈+0.41% [收盘减仓] 中性</p>
+<p>航天彩虹: 减仓 -> 📈+3.58% [收盘减仓] 误判</p>
+<p>昊华科技: 减仓 -> 📈+1.77% [收盘减仓] 中性</p>
+<p>恒玄科技: 减仓 -> 📈+2.61% [收盘减仓] 误判</p>
+<p>腾讯控股: 减仓 -> 📉-1.65% [收盘减仓] 正确</p>
+<p>阿里巴巴: 减仓 -> 📈+4.63% [收盘减仓] 误判</p>
+<p>影石创新: 减仓 -> 📉-0.06% [收盘减仓] 正确</p>
+<p>今日准确率: 6/15 (40%)</p>
+<p>今日领涨: 阿里巴巴(+4.63%), 航天彩虹(+3.58%), 恒玄科技(+2.61%)</p>
+<p>今日领跌: 阳光电源(-2.29%), 腾讯控股(-1.65%), 比亚迪(-0.92%)</p>
+<h3>反思与改进</h3>
+<em>(待手动填写)</em>
+<hr>
+<em>收盘更新: 2026-03-25 18:00:27</em>
+<h2>2026-03-26</h2>
+<h1>投资日记 2026-03-26</h1>
+<h2>盘前建议 (07:02)</h2>
+<h3>市场环境</h3>
+<li>大盘评分: 50/100</li>
+<li>环境因素: 大盘数据获取失败(URLError)</li>
+<h3>评分排行</h3>
+<table>
+<tr><th>股票</th><th>代码</th><th>价格</th><th>涨跌</th><th>趋势</th><th>动量</th><th>逆向</th><th>风控</th><th>总分</th><th>信号</th><th>止损</th><th>目标</th></tr>
+</table>
+<hr>
+<h2>收盘复盘 (18:00)</h2>
+<h3>市场收盘</h3>
+<li>大盘评分: 20/100</li>
+<li>环境因素: 上证均线空头, 大盘跌-1.1%, 上证3889点</li>
+<h3>收盘评分</h3>
+<table>
+<tr><th>股票</th><th>代码</th><th>收盘价</th><th>涨跌</th><th>趋势</th><th>动量</th><th>逆向</th><th>风控</th><th>总分</th><th>信号</th></tr>
+<tr><td>安克创新</td><td>300866</td><td>110.91</td><td>+0.66%</td><td>75</td><td>90</td><td>25</td><td>50</td><td>59.5</td><td class="hold">持有</td></tr>
+<tr><td>比亚迪</td><td>002594</td><td>103.14</td><td>-3.25%</td><td>60</td><td>70</td><td>58</td><td>60</td><td>58.1</td><td class="hold">持有</td></tr>
+<tr><td>瑞声科技</td><td>02018</td><td>34.46</td><td>-2.27%</td><td>55</td><td>65</td><td>50</td><td>50</td><td>52.2</td><td class="hold">持有</td></tr>
+<tr><td>阳光电源</td><td>300274</td><td>167.08</td><td>+1.46%</td><td>60</td><td>55</td><td>50</td><td>30</td><td>48.2</td><td class="hold">持有</td></tr>
+<tr><td>云铝股份</td><td>000807</td><td>28.41</td><td>+2.16%</td><td>50</td><td>35</td><td>95</td><td>15</td><td>47.0</td><td class="hold">持有</td></tr>
+<tr><td>昊华科技</td><td>600378</td><td>30.81</td><td>-1.53%</td><td>40</td><td>35</td><td>95</td><td>35</td><td>47.0</td><td class="hold">持有</td></tr>
+<tr><td>航天彩虹</td><td>002389</td><td>21.77</td><td>-3.76%</td><td>30</td><td>35</td><td>95</td><td>35</td><td>44.0</td><td class="sell">减仓</td></tr>
+<tr><td>沪电股份</td><td>002463</td><td>79.01</td><td>-4.25%</td><td>50</td><td>35</td><td>50</td><td>30</td><td>40.2</td><td class="sell">减仓</td></tr>
+<tr><td>腾讯控股</td><td>00700</td><td>495.6</td><td>-1.96%</td><td>10</td><td>50</td><td>65</td><td>50</td><td>38.0</td><td class="sell">减仓</td></tr>
+<tr><td>小米集团</td><td>01810</td><td>32.44</td><td>-0.25%</td><td>30</td><td>35</td><td>50</td><td>50</td><td>37.2</td><td class="sell">减仓</td></tr>
+<tr><td>阿里巴巴</td><td>09988</td><td>123.0</td><td>-4.58%</td><td>20</td><td>30</td><td>65</td><td>35</td><td>33.8</td><td class="sell">强卖</td></tr>
+<tr><td>恒玄科技</td><td>688608</td><td>157.43</td><td>-2.98%</td><td>0</td><td>20</td><td>95</td><td>35</td><td>31.2</td><td class="sell">强卖</td></tr>
+<tr><td>影石创新</td><td>688775</td><td>182.66</td><td>-2.44%</td><td>0</td><td>20</td><td>95</td><td>35</td><td>31.2</td><td class="sell">强卖</td></tr>
+<tr><td>英维克</td><td>002837</td><td>95.51</td><td>-3.04%</td><td>0</td><td>20</td><td>65</td><td>30</td><td>24.5</td><td class="sell">强卖</td></tr>
+<tr><td>兆易创新</td><td>603986</td><td>262.0</td><td>-5.89%</td><td>0</td><td>20</td><td>65</td><td>15</td><td>22.2</td><td class="sell">强卖</td></tr>
+</table>
+<h3>预测准确性</h3>
+<p>准确率: 0/15 (0%)</p>
+<li>阳光电源: 数据不足 -> +1.46% 偏差</li>
+<li>兆易创新: 数据不足 -> -5.89% 偏差</li>
+<li>比亚迪: 数据不足 -> -3.25% 偏差</li>
+<li>云铝股份: 数据不足 -> +2.16% 偏差</li>
+<li>沪电股份: 数据不足 -> -4.25% 偏差</li>
+<li>航天彩虹: 数据不足 -> -3.76% 偏差</li>
+<li>英维克: 数据不足 -> -3.04% 偏差</li>
+<li>昊华科技: 数据不足 -> -1.53% 偏差</li>
+<li>恒玄科技: 数据不足 -> -2.98% 偏差</li>
+<li>影石创新: 数据不足 -> -2.44% 偏差</li>
+<li>安克创新: 数据不足 -> +0.66% 偏差</li>
+<li>腾讯控股: 数据不足 -> -1.96% 偏差</li>
+<li>阿里巴巴: 数据不足 -> -4.58% 偏差</li>
+<li>小米集团: 数据不足 -> -0.25% 偏差</li>
+<li>瑞声科技: 数据不足 -> -2.27% 偏差</li>
+<h3>复盘总结</h3>
+<p>📋 收盘复盘 | 2026-03-26</p>
+<p>大盘收盘: 20/100 (上证均线空头, 大盘跌-1.1%, 上证3889点)</p>
+<p>预测 vs 实际:</p>
+<p>股票 | 早盘信号 | 收盘涨跌 | 收盘信号 | 评价</p>
+<p>阳光电源: 数据不足 -> 📈+1.46% [收盘持有] 中性</p>
+<p>兆易创新: 数据不足 -> 📉-5.89% [收盘强卖] 中性</p>
+<p>比亚迪: 数据不足 -> 📉-3.25% [收盘持有] 中性</p>
+<p>云铝股份: 数据不足 -> 📈+2.16% [收盘持有] 中性</p>
+<p>沪电股份: 数据不足 -> 📉-4.25% [收盘减仓] 中性</p>
+<p>航天彩虹: 数据不足 -> 📉-3.76% [收盘减仓] 中性</p>
+<p>英维克: 数据不足 -> 📉-3.04% [收盘强卖] 中性</p>
+<p>昊华科技: 数据不足 -> 📉-1.53% [收盘持有] 中性</p>
+<p>恒玄科技: 数据不足 -> 📉-2.98% [收盘强卖] 中性</p>
+<p>影石创新: 数据不足 -> 📉-2.44% [收盘强卖] 中性</p>
+<p>安克创新: 数据不足 -> 📈+0.66% [收盘持有] 中性</p>
+<p>腾讯控股: 数据不足 -> 📉-1.96% [收盘减仓] 中性</p>
+<p>阿里巴巴: 数据不足 -> 📉-4.58% [收盘强卖] 中性</p>
+<p>小米集团: 数据不足 -> 📉-0.25% [收盘减仓] 中性</p>
+<p>瑞声科技: 数据不足 -> 📉-2.27% [收盘持有] 中性</p>
+<p>今日准确率: 0/15 (0%)</p>
+<p>今日领涨: 云铝股份(+2.16%), 阳光电源(+1.46%), 安克创新(+0.66%)</p>
+<p>今日领跌: 兆易创新(-5.89%), 阿里巴巴(-4.58%), 沪电股份(-4.25%)</p>
+<h3>反思与改进</h3>
+<em>(待手动填写)</em>
+<hr>
+<em>收盘更新: 2026-03-26 18:00:26</em>
+<h2>2026-03-27</h2>
+<h1>投资日记 2026-03-27</h1>
+<h2>盘前建议 (07:01)</h2>
+<h3>市场环境</h3>
+<li>大盘评分: 20/100</li>
+<li>环境因素: 上证均线空头, 大盘跌-1.1%, 上证3889点</li>
+<h3>评分排行</h3>
+<table>
+<tr><th>股票</th><th>代码</th><th>价格</th><th>涨跌</th><th>趋势</th><th>动量</th><th>逆向</th><th>风控</th><th>总分</th><th>信号</th><th>止损</th><th>目标</th></tr>
+<tr><td>安克创新</td><td>300866</td><td>110.91</td><td>+0.66%</td><td>75</td><td>90</td><td>25</td><td>50</td><td>59.5</td><td class="hold">持有</td><td>100.81</td><td>126.06</td></tr>
+<tr><td>比亚迪</td><td>002594</td><td>103.14</td><td>-3.25%</td><td>60</td><td>70</td><td>58</td><td>60</td><td>58.1</td><td class="hold">持有</td><td>95.36</td><td>114.82</td></tr>
+<tr><td>瑞声科技</td><td>02018</td><td>34.46</td><td>-2.27%</td><td>55</td><td>65</td><td>50</td><td>50</td><td>52.2</td><td class="hold">持有</td><td>31.48</td><td>38.93</td></tr>
+<tr><td>阳光电源</td><td>300274</td><td>166.0</td><td>-0.65%</td><td>60</td><td>70</td><td>50</td><td>30</td><td>52.0</td><td class="hold">持有</td><td>145.53</td><td>196.71</td></tr>
+<tr><td>云铝股份</td><td>000807</td><td>28.13</td><td>-0.99%</td><td>50</td><td>50</td><td>95</td><td>15</td><td>50.8</td><td class="hold">持有</td><td>24.63</td><td>33.37</td></tr>
+<tr><td>昊华科技</td><td>600378</td><td>30.81</td><td>-1.53%</td><td>40</td><td>35</td><td>95</td><td>35</td><td>47.0</td><td class="hold">持有</td><td>28.37</td><td>34.47</td></tr>
+<tr><td>航天彩虹</td><td>002389</td><td>21.77</td><td>-3.76%</td><td>30</td><td>35</td><td>95</td><td>35</td><td>44.0</td><td class="sell">减仓</td><td>19.62</td><td>24.99</td></tr>
+<tr><td>沪电股份</td><td>002463</td><td>79.01</td><td>-4.25%</td><td>50</td><td>35</td><td>50</td><td>30</td><td>40.2</td><td class="sell">减仓</td><td>68.99</td><td>94.04</td></tr>
+<tr><td>腾讯控股</td><td>00700</td><td>495.6</td><td>-1.96%</td><td>10</td><td>50</td><td>65</td><td>50</td><td>38.0</td><td class="sell">减仓</td><td>454.9</td><td>556.65</td></tr>
+<tr><td>小米集团</td><td>01810</td><td>32.44</td><td>-0.25%</td><td>30</td><td>35</td><td>50</td><td>50</td><td>37.2</td><td class="sell">减仓</td><td>29.64</td><td>36.64</td></tr>
+<tr><td>阿里巴巴</td><td>09988</td><td>123.0</td><td>-4.58%</td><td>20</td><td>30</td><td>65</td><td>35</td><td>33.8</td><td class="sell">强卖</td><td>111.61</td><td>140.08</td></tr>
+<tr><td>恒玄科技</td><td>688608</td><td>157.43</td><td>-2.98%</td><td>0</td><td>20</td><td>95</td><td>35</td><td>31.2</td><td class="sell">强卖</td><td>145.18</td><td>175.8</td></tr>
+<tr><td>影石创新</td><td>688775</td><td>182.66</td><td>-2.44%</td><td>0</td><td>20</td><td>95</td><td>35</td><td>31.2</td><td class="sell">强卖</td><td>167.95</td><td>204.73</td></tr>
+<tr><td>英维克</td><td>002837</td><td>95.51</td><td>-3.04%</td><td>0</td><td>20</td><td>65</td><td>30</td><td>24.5</td><td class="sell">强卖</td><td>85.0</td><td>111.27</td></tr>
+<tr><td>兆易创新</td><td>603986</td><td>262.0</td><td>-5.89%</td><td>0</td><td>20</td><td>65</td><td>15</td><td>22.2</td><td class="sell">强卖</td><td>228.73</td><td>311.91</td></tr>
+</table>
+<h3>风险警示（卖出信号）</h3>
+<li>航天彩虹(44.0分): 均线空头排列 | 5日跌-7.1%弱势 | 偏离MA20达-11.7%，超跌修复概率高</li>
+<li>沪电股份(40.2分): 5日跌-8.5%弱势 | 高波动(6.3%)</li>
+<li>腾讯控股(38.0分): 均线空头排列 | 接近10日新低(495.00) | 偏离MA20-5.4%，逆向关注</li>
+<li>小米集团(37.2分): 均线空头排列 | 5日跌-10.7%弱势</li>
+<li>阿里巴巴(33.8分): 均线空头排列 | MA20下行(-3.6%) | 5日跌-6.8%弱势</li>
+<li>恒玄科技(31.2分): 均线空头排列 | 接近10日新低(156.36) | MA20下行(-5.2%)</li>
+<li>影石创新(31.2分): 均线空头排列 | 接近10日新低(181.09) | MA20下行(-3.6%)</li>
+<li>英维克(24.5分): 均线空头排列 | 接近10日新低(95.07) | MA20下行(-2.6%)</li>
+<li>兆易创新(22.2分): 均线空头排列 | 接近10日新低(256.88) | MA20下行(-2.8%)</li>
+<h3>逆向机会（冯柳弱者体系）</h3>
+<p>以下标的虽整体评分不高，但逆向指标显示存在超跌反弹机会：</p>
+<table>
+<tr><th>股票</th><th>逆向得分</th><th>总分</th><th>信号</th><th>逆向理由</th></tr>
+<tr><td>云铝股份</td><td>95</td><td>50.8</td><td class="hold">持有</td><td>偏离MA20达-11.5%，超跌修复概率高, RSI=28超卖</td></tr>
+<tr><td>昊华科技</td><td>95</td><td>47.0</td><td class="hold">持有</td><td>偏离MA20达-10.7%，超跌修复概率高, RSI=15超卖</td></tr>
+<tr><td>航天彩虹</td><td>95</td><td>44.0</td><td class="sell">减仓</td><td>偏离MA20达-11.7%，超跌修复概率高, RSI=23超卖</td></tr>
+<tr><td>恒玄科技</td><td>95</td><td>31.2</td><td class="sell">强卖</td><td>偏离MA20达-12.2%，超跌修复概率高, RSI=20超卖</td></tr>
+<tr><td>影石创新</td><td>95</td><td>31.2</td><td class="sell">强卖</td><td>偏离MA20达-10.8%，超跌修复概率高, RSI=29超卖</td></tr>
+<tr><td>腾讯控股</td><td>65</td><td>38.0</td><td class="sell">减仓</td><td>偏离MA20-5.4%，逆向关注</td></tr>
+<tr><td>阿里巴巴</td><td>65</td><td>33.8</td><td class="sell">强卖</td><td>偏离MA20-6.0%，逆向关注</td></tr>
+<tr><td>英维克</td><td>65</td><td>24.5</td><td class="sell">强卖</td><td>偏离MA20-6.0%，逆向关注</td></tr>
+<tr><td>兆易创新</td><td>65</td><td>22.2</td><td class="sell">强卖</td><td>偏离MA20-8.1%，逆向关注</td></tr>
+</table>
+<p><strong>逆向分析总结：</strong></p>
+<p>今日 <strong>云铝股份、昊华科技、航天彩虹、恒玄科技、影石创新</strong> 出现极端超跌信号：</p>
+<li>云铝股份：股价偏离20日均线-11.5%，RSI仅28（低于超卖线30）。历史上类似偏离水平往往伴随技术性超跌反弹。</li>
+<li>昊华科技：股价偏离20日均线-10.7%，RSI仅15（低于超卖线30）。历史上类似偏离水平往往伴随技术性超跌反弹。</li>
+<li>航天彩虹：股价偏离20日均线-11.7%，RSI仅23（低于超卖线30）。历史上类似偏离水平往往伴随技术性超跌反弹。</li>
+<li>恒玄科技：股价偏离20日均线-12.2%，RSI仅20（低于超卖线30）。历史上类似偏离水平往往伴随技术性超跌反弹。</li>
+<li>影石创新：股价偏离20日均线-10.8%，RSI仅29（低于超卖线30）。历史上类似偏离水平往往伴随技术性超跌反弹。</li>
+<p><strong>腾讯控股、阿里巴巴、英维克、兆易创新</strong> 也进入逆向关注区间，但信号强度稍弱，建议持续跟踪。</p>
+<p>需特别注意：当前大盘环境评分仅 20/100，整体偏弱。逆向操作应更加谨慎，建议等待大盘企稳或个股出现明确止跌信号（如放量阳线、RSI从超卖区拐头向上）后再考虑介入。</p>
+<blockquote style="background:#1a1a2e;border-left:3px solid #ff6b35;padding:0.8rem 1rem;margin:1rem 0;border-radius:4px;">⚠️ 逆向机会风险较高，建议：1) 小仓位试探(5%以下) 2) 等待止跌确认信号（放量阳线/RSI拐头）3) 严格止损</blockquote>
+<hr>
+<h2>收盘复盘 (18:56)</h2>
+<h3>市场收盘</h3>
+<li>大盘评分: 50/100</li>
+<li>环境因素: 上证3914点</li>
+<h3>收盘评分</h3>
+<table>
+<tr><th>股票</th><th>代码</th><th>收盘价</th><th>涨跌</th><th>趋势</th><th>动量</th><th>逆向</th><th>风控</th><th>总分</th><th>信号</th></tr>
+<tr><td>安克创新</td><td>300866</td><td>113.41</td><td>+2.25%</td><td>75</td><td>90</td><td>25</td><td>50</td><td>62.5</td><td class="buy">买入</td></tr>
+<tr><td>瑞声科技</td><td>02018</td><td>34.28</td><td>-0.52%</td><td>55</td><td>65</td><td>50</td><td>50</td><td>55.2</td><td class="hold">持有</td></tr>
+<tr><td>阳光电源</td><td>300274</td><td>166.0</td><td>-0.65%</td><td>60</td><td>70</td><td>50</td><td>30</td><td>55.0</td><td class="hold">持有</td></tr>
+<tr><td>航天彩虹</td><td>002389</td><td>22.2</td><td>+1.98%</td><td>50</td><td>50</td><td>85</td><td>35</td><td>54.8</td><td class="hold">持有</td></tr>
+<tr><td>小米集团</td><td>01810</td><td>33.0</td><td>+1.73%</td><td>50</td><td>50</td><td>50</td><td>50</td><td>50.0</td><td class="hold">持有</td></tr>
+<tr><td>昊华科技</td><td>600378</td><td>31.45</td><td>+2.08%</td><td>40</td><td>35</td><td>85</td><td>35</td><td>48.0</td><td class="hold">持有</td></tr>
+<tr><td>沪电股份</td><td>002463</td><td>80.64</td><td>+2.06%</td><td>50</td><td>50</td><td>50</td><td>30</td><td>47.0</td><td class="hold">持有</td></tr>
+<tr><td>影石创新</td><td>688775</td><td>186.59</td><td>+2.15%</td><td>40</td><td>35</td><td>65</td><td>35</td><td>44.0</td><td class="sell">减仓</td></tr>
+<tr><td>腾讯控股</td><td>00700</td><td>493.4</td><td>-0.44%</td><td>10</td><td>50</td><td>73</td><td>50</td><td>42.6</td><td class="sell">减仓</td></tr>
+<tr><td>恒玄科技</td><td>688608</td><td>168.52</td><td>+7.04%</td><td>40</td><td>40</td><td>50</td><td>35</td><td>42.2</td><td class="sell">减仓</td></tr>
+<tr><td>阿里巴巴</td><td>09988</td><td>122.6</td><td>-0.33%</td><td>20</td><td>35</td><td>65</td><td>50</td><td>40.2</td><td class="sell">减仓</td></tr>
+<tr><td>兆易创新</td><td>603986</td><td>258.66</td><td>-1.27%</td><td>20</td><td>20</td><td>65</td><td>15</td><td>31.2</td><td class="sell">强卖</td></tr>
+<tr><td>英维克</td><td>002837</td><td>93.13</td><td>-2.49%</td><td>20</td><td>20</td><td>65</td><td>15</td><td>31.2</td><td class="sell">强卖</td></tr>
+</table>
+<h3>预测准确性</h3>
+<p>准确率: 10/15 (67%)</p>
+<li>安克创新: 持有 -> +2.25% 正确</li>
+<li>比亚迪: 持有 -> +0.00% 正确</li>
+<li>瑞声科技: 持有 -> -0.52% 正确</li>
+<li>阳光电源: 持有 -> -0.65% 正确</li>
+<li>云铝股份: 持有 -> +0.00% 正确</li>
+<li>昊华科技: 持有 -> +2.08% 正确</li>
+<li>航天彩虹: 减仓 -> +1.98% 偏差</li>
+<li>沪电股份: 减仓 -> +2.06% 偏差</li>
+<li>腾讯控股: 减仓 -> -0.44% 正确</li>
+<li>小米集团: 减仓 -> +1.73% 偏差</li>
+<li>阿里巴巴: 强卖 -> -0.33% 正确</li>
+<li>恒玄科技: 强卖 -> +7.04% 偏差</li>
+<li>影石创新: 强卖 -> +2.15% 偏差</li>
+<li>英维克: 强卖 -> -2.49% 正确</li>
+<li>兆易创新: 强卖 -> -1.27% 正确</li>
+<h3>复盘总结</h3>
+<p>📋 收盘复盘 | 2026-03-27</p>
+<p>大盘收盘: 50/100 (上证3914点)</p>
+<p>预测 vs 实际:</p>
+<p>股票 | 早盘信号 | 收盘涨跌 | 收盘信号 | 评价</p>
+<p>安克创新: 持有 -> 📈+2.25% [收盘买入] 正确</p>
+<p>比亚迪: 持有 -> ➡️+0.00% [收盘数据不足] 正确</p>
+<p>瑞声科技: 持有 -> 📉-0.52% [收盘持有] 正确</p>
+<p>阳光电源: 持有 -> 📉-0.65% [收盘持有] 正确</p>
+<p>云铝股份: 持有 -> ➡️+0.00% [收盘数据不足] 正确</p>
+<p>昊华科技: 持有 -> 📈+2.08% [收盘持有] 正确</p>
+<p>航天彩虹: 减仓 -> 📈+1.98% [收盘持有] 中性</p>
+<p>沪电股份: 减仓 -> 📈+2.06% [收盘持有] 误判</p>
+<p>腾讯控股: 减仓 -> 📉-0.44% [收盘减仓] 正确</p>
+<p>小米集团: 减仓 -> 📈+1.73% [收盘持有] 中性</p>
+<p>阿里巴巴: 强卖 -> 📉-0.33% [收盘减仓] 正确</p>
+<p>恒玄科技: 强卖 -> 📈+7.04% [收盘减仓] 误判</p>
+<p>影石创新: 强卖 -> 📈+2.15% [收盘减仓] 误判</p>
+<p>英维克: 强卖 -> 📉-2.49% [收盘强卖] 正确</p>
+<p>兆易创新: 强卖 -> 📉-1.27% [收盘强卖] 正确</p>
+<p>今日准确率: 10/15 (67%)</p>
+<p>今日领涨: 恒玄科技(+7.04%), 安克创新(+2.25%), 影石创新(+2.15%)</p>
+<p>今日领跌: 英维克(-2.49%), 兆易创新(-1.27%), 阳光电源(-0.65%)</p>
+<h3>反思与改进</h3>
+<em>(待手动填写)</em>
+<hr>
+<em>收盘更新: 2026-03-27 18:56:37</em>
+<h2>2026-03-30</h2>
+<h1>投资日记 2026-03-30</h1>
+<h2>盘前建议 (07:03)</h2>
+<h3>市场环境</h3>
+<li>大盘评分: 50/100</li>
+<li>环境因素: 上证3914点</li>
+<h3>评分排行</h3>
+<table>
+<tr><th>股票</th><th>代码</th><th>价格</th><th>涨跌</th><th>趋势</th><th>动量</th><th>逆向</th><th>风控</th><th>总分</th><th>信号</th><th>止损</th><th>目标</th></tr>
+<tr><td>安克创新</td><td>300866</td><td>113.41</td><td>+2.25%</td><td>75</td><td>90</td><td>25</td><td>50</td><td>62.5</td><td class="buy">买入</td><td>103.19</td><td>128.75</td></tr>
+<tr><td>比亚迪</td><td>002594</td><td>105.3</td><td>+2.09%</td><td>60</td><td>70</td><td>50</td><td>60</td><td>59.5</td><td class="hold">持有</td><td>97.78</td><td>116.58</td></tr>
+<tr><td>瑞声科技</td><td>02018</td><td>34.28</td><td>-0.52%</td><td>55</td><td>65</td><td>50</td><td>50</td><td>55.2</td><td class="hold">持有</td><td>31.41</td><td>38.58</td></tr>
+<tr><td>航天彩虹</td><td>002389</td><td>22.2</td><td>+1.98%</td><td>50</td><td>50</td><td>85</td><td>35</td><td>54.8</td><td class="hold">持有</td><td>20.28</td><td>25.08</td></tr>
+<tr><td>阳光电源</td><td>300274</td><td>163.35</td><td>-1.60%</td><td>60</td><td>50</td><td>50</td><td>30</td><td>50.0</td><td class="hold">持有</td><td>143.3</td><td>193.42</td></tr>
+<tr><td>小米集团</td><td>01810</td><td>33.0</td><td>+1.73%</td><td>50</td><td>50</td><td>50</td><td>50</td><td>50.0</td><td class="hold">持有</td><td>30.17</td><td>37.24</td></tr>
+<tr><td>云铝股份</td><td>000807</td><td>28.73</td><td>+2.13%</td><td>50</td><td>55</td><td>65</td><td>15</td><td>49.0</td><td class="hold">持有</td><td>25.34</td><td>33.82</td></tr>
+<tr><td>昊华科技</td><td>600378</td><td>31.45</td><td>+2.08%</td><td>40</td><td>35</td><td>85</td><td>35</td><td>48.0</td><td class="hold">持有</td><td>29.1</td><td>34.98</td></tr>
+<tr><td>沪电股份</td><td>002463</td><td>80.64</td><td>+2.06%</td><td>50</td><td>50</td><td>50</td><td>30</td><td>47.0</td><td class="hold">持有</td><td>70.59</td><td>95.72</td></tr>
+<tr><td>影石创新</td><td>688775</td><td>186.59</td><td>+2.15%</td><td>40</td><td>35</td><td>65</td><td>35</td><td>44.0</td><td class="sell">减仓</td><td>172.15</td><td>208.25</td></tr>
+<tr><td>腾讯控股</td><td>00700</td><td>493.4</td><td>-0.44%</td><td>10</td><td>50</td><td>73</td><td>50</td><td>42.6</td><td class="sell">减仓</td><td>453.54</td><td>553.19</td></tr>
+<tr><td>恒玄科技</td><td>688608</td><td>168.52</td><td>+7.04%</td><td>40</td><td>40</td><td>50</td><td>35</td><td>42.2</td><td class="sell">减仓</td><td>155.3</td><td>188.35</td></tr>
+<tr><td>阿里巴巴</td><td>09988</td><td>122.6</td><td>-0.33%</td><td>20</td><td>35</td><td>65</td><td>50</td><td>40.2</td><td class="sell">减仓</td><td>111.63</td><td>139.06</td></tr>
+<tr><td>兆易创新</td><td>603986</td><td>258.66</td><td>-1.27%</td><td>20</td><td>20</td><td>65</td><td>15</td><td>31.2</td><td class="sell">强卖</td><td>225.28</td><td>308.73</td></tr>
+<tr><td>英维克</td><td>002837</td><td>93.13</td><td>-2.49%</td><td>20</td><td>20</td><td>65</td><td>15</td><td>31.2</td><td class="sell">强卖</td><td>83.15</td><td>108.11</td></tr>
+</table>
+<h3>重点关注（买入信号）</h3>
+<li>安克创新(62.5分): 短期均线多头 | MA20上行(+2.7%) | 5日涨6.4%强势</li>
+<h3>风险警示（卖出信号）</h3>
+<li>影石创新(44.0分): MA20下行(-3.3%) | 20日跌-14.5% | 偏离MA20-8.2%，逆向关注</li>
+<li>腾讯控股(42.6分): 均线空头排列 | 接近10日新低(487.60) | 偏离MA20-5.6%，逆向关注</li>
+<li>恒玄科技(42.2分): MA20下行(-4.9%) | 20日跌-18.5% | 20日回撤-21.2%</li>
+<li>阿里巴巴(40.2分): 均线空头排列 | MA20下行(-3.2%) | 20日跌-14.2%</li>
+<li>兆易创新(31.2分): 均线空头排列 | MA20下行(-2.9%) | 5日跌-10.9%弱势</li>
+<li>英维克(31.2分): 均线空头排列 | MA20下行(-2.7%) | 5日跌-11.3%弱势</li>
+<h3>逆向机会（冯柳弱者体系）</h3>
+<p>以下标的虽整体评分不高，但逆向指标显示存在超跌反弹机会：</p>
+<table>
+<tr><th>股票</th><th>逆向得分</th><th>总分</th><th>信号</th><th>逆向理由</th></tr>
+<tr><td>航天彩虹</td><td>85</td><td>54.8</td><td class="hold">持有</td><td>偏离MA20-9.6%，逆向关注, RSI=28超卖</td></tr>
+<tr><td>昊华科技</td><td>85</td><td>48.0</td><td class="hold">持有</td><td>偏离MA20-8.0%，逆向关注, RSI=23超卖</td></tr>
+<tr><td>腾讯控股</td><td>73</td><td>42.6</td><td class="sell">减仓</td><td>偏离MA20-5.6%，逆向关注, 连跌3天</td></tr>
+<tr><td>云铝股份</td><td>65</td><td>49.0</td><td class="hold">持有</td><td>偏离MA20-9.2%，逆向关注</td></tr>
+<tr><td>影石创新</td><td>65</td><td>44.0</td><td class="sell">减仓</td><td>偏离MA20-8.2%，逆向关注</td></tr>
+<tr><td>阿里巴巴</td><td>65</td><td>40.2</td><td class="sell">减仓</td><td>偏离MA20-5.6%，逆向关注</td></tr>
+<tr><td>兆易创新</td><td>65</td><td>31.2</td><td class="sell">强卖</td><td>偏离MA20-8.6%，逆向关注</td></tr>
+<tr><td>英维克</td><td>65</td><td>31.2</td><td class="sell">强卖</td><td>偏离MA20-7.6%，逆向关注</td></tr>
+</table>
+<p><strong>逆向分析总结：</strong></p>
+<p><strong>航天彩虹、昊华科技、腾讯控股、云铝股份、影石创新、阿里巴巴、兆易创新、英维克</strong> 也进入逆向关注区间，但信号强度稍弱，建议持续跟踪。</p>
+<p>大盘环境中性，逆向操作需结合个股止跌信号综合判断。</p>
+<blockquote style="background:#1a1a2e;border-left:3px solid #ff6b35;padding:0.8rem 1rem;margin:1rem 0;border-radius:4px;">⚠️ 逆向机会风险较高，建议：1) 小仓位试探(5%以下) 2) 等待止跌确认信号（放量阳线/RSI拐头）3) 严格止损</blockquote>
+<hr>
+<h2>收盘复盘 (18:00)</h2>
+<h3>市场收盘</h3>
+<li>大盘评分: 50/100</li>
+<li>环境因素: 上证3923点</li>
+<h3>收盘评分</h3>
+<table>
+<tr><th>股票</th><th>代码</th><th>收盘价</th><th>涨跌</th><th>趋势</th><th>动量</th><th>逆向</th><th>风控</th><th>总分</th><th>信号</th></tr>
+<tr><td>比亚迪</td><td>002594</td><td>105.3</td><td>+2.09%</td><td>60</td><td>70</td><td>50</td><td>60</td><td>59.5</td><td class="hold">持有</td></tr>
+<tr><td>安克创新</td><td>300866</td><td>111.34</td><td>-1.83%</td><td>75</td><td>70</td><td>35</td><td>50</td><td>59.5</td><td class="hold">持有</td></tr>
+<tr><td>瑞声科技</td><td>02018</td><td>33.78</td><td>-1.46%</td><td>50</td><td>65</td><td>58</td><td>50</td><td>55.4</td><td class="hold">持有</td></tr>
+<tr><td>影石创新</td><td>688775</td><td>190.32</td><td>+2.00%</td><td>40</td><td>50</td><td>65</td><td>50</td><td>50.0</td><td class="hold">持有</td></tr>
+<tr><td>昊华科技</td><td>600378</td><td>31.25</td><td>-0.64%</td><td>40</td><td>40</td><td>85</td><td>35</td><td>49.2</td><td class="hold">持有</td></tr>
+<tr><td>云铝股份</td><td>000807</td><td>31.46</td><td>+9.50%</td><td>50</td><td>65</td><td>50</td><td>15</td><td>48.5</td><td class="hold">持有</td></tr>
+<tr><td>航天彩虹</td><td>002389</td><td>22.32</td><td>+0.54%</td><td>40</td><td>50</td><td>65</td><td>35</td><td>47.8</td><td class="hold">持有</td></tr>
+<tr><td>沪电股份</td><td>002463</td><td>79.19</td><td>-1.80%</td><td>50</td><td>50</td><td>50</td><td>30</td><td>47.0</td><td class="hold">持有</td></tr>
+<tr><td>腾讯控股</td><td>00700</td><td>481.6</td><td>-2.39%</td><td>10</td><td>50</td><td>93</td><td>50</td><td>46.6</td><td class="hold">持有</td></tr>
+<tr><td>小米集团</td><td>01810</td><td>32.38</td><td>-1.88%</td><td>30</td><td>55</td><td>50</td><td>50</td><td>45.2</td><td class="hold">持有</td></tr>
+<tr><td>恒玄科技</td><td>688608</td><td>167.75</td><td>-0.46%</td><td>40</td><td>50</td><td>50</td><td>35</td><td>44.8</td><td class="sell">减仓</td></tr>
+<tr><td>阿里巴巴</td><td>09988</td><td>120.5</td><td>-1.71%</td><td>20</td><td>40</td><td>73</td><td>50</td><td>43.1</td><td class="sell">减仓</td></tr>
+<tr><td>阳光电源</td><td>300274</td><td>157.1</td><td>-3.83%</td><td>30</td><td>35</td><td>58</td><td>30</td><td>38.9</td><td class="sell">减仓</td></tr>
+<tr><td>兆易创新</td><td>603986</td><td>255.85</td><td>-1.09%</td><td>20</td><td>20</td><td>73</td><td>15</td><td>32.9</td><td class="sell">强卖</td></tr>
+<tr><td>英维克</td><td>002837</td><td>89.77</td><td>-3.61%</td><td>0</td><td>20</td><td>83</td><td>15</td><td>28.9</td><td class="sell">强卖</td></tr>
+</table>
+<h3>预测准确性</h3>
+<p>准确率: 11/15 (73%)</p>
+<li>安克创新: 买入 -> -1.83% 偏差</li>
+<li>比亚迪: 持有 -> +2.09% 正确</li>
+<li>瑞声科技: 持有 -> -1.46% 正确</li>
+<li>航天彩虹: 持有 -> +0.54% 正确</li>
+<li>阳光电源: 持有 -> -3.83% 偏差</li>
+<li>小米集团: 持有 -> -1.88% 正确</li>
+<li>云铝股份: 持有 -> +9.50% 偏差</li>
+<li>昊华科技: 持有 -> -0.64% 正确</li>
+<li>沪电股份: 持有 -> -1.80% 正确</li>
+<li>影石创新: 减仓 -> +2.00% 偏差</li>
+<li>腾讯控股: 减仓 -> -2.39% 正确</li>
+<li>恒玄科技: 减仓 -> -0.46% 正确</li>
+<li>阿里巴巴: 减仓 -> -1.71% 正确</li>
+<li>兆易创新: 强卖 -> -1.09% 正确</li>
+<li>英维克: 强卖 -> -3.61% 正确</li>
+<h3>复盘总结</h3>
+<p>📋 收盘复盘 | 2026-03-30</p>
+<p>大盘收盘: 50/100 (上证3923点)</p>
+<p>预测 vs 实际:</p>
+<p>股票 | 早盘信号 | 收盘涨跌 | 收盘信号 | 评价</p>
+<p>安克创新: 买入 -> 📉-1.83% [收盘持有] 中性</p>
+<p>比亚迪: 持有 -> 📈+2.09% [收盘持有] 正确</p>
+<p>瑞声科技: 持有 -> 📉-1.46% [收盘持有] 正确</p>
+<p>航天彩虹: 持有 -> 📈+0.54% [收盘持有] 正确</p>
+<p>阳光电源: 持有 -> 📉-3.83% [收盘减仓] 中性</p>
+<p>小米集团: 持有 -> 📉-1.88% [收盘持有] 正确</p>
+<p>云铝股份: 持有 -> 📈+9.50% [收盘持有] 中性</p>
+<p>昊华科技: 持有 -> 📉-0.64% [收盘持有] 正确</p>
+<p>沪电股份: 持有 -> 📉-1.80% [收盘持有] 正确</p>
+<p>影石创新: 减仓 -> 📈+2.00% [收盘持有] 中性</p>
+<p>腾讯控股: 减仓 -> 📉-2.39% [收盘持有] 正确</p>
+<p>恒玄科技: 减仓 -> 📉-0.46% [收盘减仓] 正确</p>
+<p>阿里巴巴: 减仓 -> 📉-1.71% [收盘减仓] 正确</p>
+<p>兆易创新: 强卖 -> 📉-1.09% [收盘强卖] 正确</p>
+<p>英维克: 强卖 -> 📉-3.61% [收盘强卖] 正确</p>
+<p>今日准确率: 11/15 (73%)</p>
+<p>今日领涨: 云铝股份(+9.50%), 比亚迪(+2.09%), 影石创新(+2.00%)</p>
+<p>今日领跌: 阳光电源(-3.83%), 英维克(-3.61%), 腾讯控股(-2.39%)</p>
+<h3>反思与改进</h3>
+<em>(待手动填写)</em>
+<hr>
+<em>收盘更新: 2026-03-30 18:00:25</em>
+<div class="disclaimer">AI辅助分析，仅供参考。投资有风险，入市需谨慎。</div>
+</div>
+</div>
+<script>
+var _h="fa169fe67d8da362d92db702efa0b243181a7c341e7a377f7024643f0ad3f38b";
+async function _sha(s){var e=new TextEncoder().encode(s);var h=await crypto.subtle.digest("SHA-256",e);return Array.from(new Uint8Array(h)).map(b=>b.toString(16).padStart(2,"0")).join("")}
+async function unlock(){var p=document.getElementById("pwd-input").value;var h=await _sha(p);if(h===_h){document.getElementById("lock-screen").style.display="none";document.getElementById("diary-content").style.display="block";sessionStorage.setItem("diary_auth","1")}else{document.getElementById("pwd-error").style.display="block";document.getElementById("pwd-input").value=""}}
+document.getElementById("pwd-input").addEventListener("keydown",function(e){if(e.key==="Enter")unlock()});
+if(sessionStorage.getItem("diary_auth")==="1"){document.getElementById("lock-screen").style.display="none";document.getElementById("diary-content").style.display="block"}
+</script>
+</body>
+</html>
