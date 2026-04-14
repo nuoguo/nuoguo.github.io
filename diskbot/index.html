@@ -265,8 +265,8 @@ body {
          style="width:100%;text-align:center;">下载 .dmg</a>
       <div class="download-mirror">备用镜像：<a href="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.1.0-apple-silicon.dmg" target="_blank" rel="noopener">raw.githubusercontent.com</a></div>
       <div class="download-meta">
-        大小：约 908KB<br>
-        SHA256：<code>f395e0d1286a844837e02f16df5c9bc35f95c60204c981aecf3f84d31f05a0cc</code>
+        大小：约 897KB<br>
+        SHA256：<code>b1bb8330d6eb5a98f06c3afb33858d74dc43a7276dd755b18f7d3fcc9a229299</code>
       </div>
     </div>
     <div class="download-card">
@@ -280,8 +280,8 @@ body {
          style="width:100%;text-align:center;">下载 .dmg</a>
       <div class="download-mirror">备用镜像：<a href="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.1.0-intel.dmg" target="_blank" rel="noopener">raw.githubusercontent.com</a></div>
       <div class="download-meta">
-        大小：约 925KB<br>
-        SHA256：<code>155235490a4648793d1047c575b45aab9b062b3b92d7d0daa28e1b43b32624b0</code>
+        大小：约 942KB<br>
+        SHA256：<code>79e522b9f3cea3058e578b86215e7e6a949c1772cf64a58e6cc727c39c6c81cc</code>
       </div>
     </div>
     <div class="download-card">
@@ -296,7 +296,7 @@ body {
       <div class="download-mirror">备用镜像：<a href="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.1.0-universal.dmg" target="_blank" rel="noopener">raw.githubusercontent.com</a></div>
       <div class="download-meta">
         大小：约 1.5MB<br>
-        SHA256：<code>2f32e0210399c08482f76e06b243a8a285c7b5f7782b39b14b830118c2628a1e</code>
+        SHA256：<code>ba6677199c7d1800487e19e1f82d5c5460b4209368a2a8bd92b58d6a89588461</code>
       </div>
     </div>
   </div>
@@ -306,6 +306,11 @@ body {
       校验文件：
       <a href="/diskbot/download/SHA256SUMS.txt" style="color:var(--accent);text-decoration:none;">SHA256SUMS.txt</a>
       （终端可用 <code>shasum -a 256 文件名.dmg</code> 对比）
+    </p>
+    <p style="font-size:13px;color:var(--text-secondary);margin-top:10px;">
+      若提示“应用已损坏”，请在终端执行：
+      <code>xattr -dr com.apple.quarantine /Applications/DiskBot*.app</code>
+      后重新打开。
     </p>
   </div>
 </section>
