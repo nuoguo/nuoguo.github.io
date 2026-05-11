@@ -49,24 +49,89 @@
     }
   ],
   "capabilities": [
-    { "icon": "💬", "name": "飞书多轮对话", "desc": "卡片流式输出，自然语言交互，全天候在线", "status": "done" },
-    { "icon": "📰", "name": "每日热点", "desc": "每天 8:00 自动抓取热点新闻，总结推送到飞书", "status": "done" },
-    { "icon": "📈", "name": "股票分析", "desc": "东方财富 + Tushare，A 股/美股/港股实时查询与分析", "status": "done" },
-    { "icon": "📝", "name": "公众号运营", "desc": "自动生成文章、草稿发布、排版优化", "status": "done" },
-    { "icon": "🖼️", "name": "多媒体管理", "desc": "私人图库+视频管理，人脸识别，智能分类搜索", "status": "done" },
-    { "icon": "🧬", "name": "自我进化", "desc": "capability-evolver 持续分析缺口，GEP 协议自修复", "status": "done" },
-    { "icon": "🤖", "name": "多智能体调度", "desc": "stock / news / wechat-official 专项智能体，异步协作", "status": "done" },
-    { "icon": "📱", "name": "朋友圈发布", "desc": "pyautogui 模拟操作，多策略识别发表按钮", "status": "wip" },
-    { "icon": "🎬", "name": "短视频生成", "desc": "热点总结 → TTS 配音 → 配图合成 → 短视频输出", "status": "wip" }
+    {
+      "icon": "💬",
+      "name": "飞书多轮对话",
+      "desc": "卡片流式输出，自然语言交互，全天候在线",
+      "status": "done"
+    },
+    {
+      "icon": "📰",
+      "name": "每日热点",
+      "desc": "每天 8:00 自动抓取热点新闻，总结推送到飞书",
+      "status": "done"
+    },
+    {
+      "icon": "📈",
+      "name": "股票分析",
+      "desc": "东方财富 + Tushare，A 股/美股/港股实时查询与分析",
+      "status": "done"
+    },
+    {
+      "icon": "📝",
+      "name": "公众号运营",
+      "desc": "自动生成文章、草稿发布、排版优化",
+      "status": "done"
+    },
+    {
+      "icon": "🖼️",
+      "name": "多媒体管理",
+      "desc": "私人图库+视频管理，人脸识别，智能分类搜索",
+      "status": "done"
+    },
+    {
+      "icon": "🧬",
+      "name": "自我进化",
+      "desc": "capability-evolver 持续分析缺口，GEP 协议自修复",
+      "status": "done"
+    },
+    {
+      "icon": "🤖",
+      "name": "多智能体调度",
+      "desc": "stock / news / wechat-official 专项智能体，异步协作",
+      "status": "done"
+    },
+    {
+      "icon": "📱",
+      "name": "朋友圈发布",
+      "desc": "pyautogui 模拟操作，多策略识别发表按钮",
+      "status": "wip"
+    },
+    {
+      "icon": "🎬",
+      "name": "短视频生成",
+      "desc": "热点总结 → TTS 配音 → 配图合成 → 短视频输出",
+      "status": "wip"
+    }
   ],
   "articles": [
+    {
+      "id": "cleanmymac-free",
+      "title": "别再花300块买CleanMyMac了，这个免费工具更好用",
+      "date": "2026-04-12",
+      "cover_emoji": "💿",
+      "summary": "CleanMyMac要价50美元，DaisyDisk也要10美元。但2026年了，Mac清理工具居然还有免费的——而且比它们都好用。",
+      "tags": [
+        "Mac",
+        "磁盘清理",
+        "免费工具",
+        "DiskBot",
+        "CleanMyMac"
+      ],
+      "url": "/articles/diskbot/cleanmymac-free.html"
+    },
     {
       "id": "ai-ontology-blueprint",
       "title": "Palantir 值4000亿的秘密武器: 12张漫画带你看懂AI本体论",
       "date": "2026-03-20",
       "cover_emoji": "🧠",
       "summary": "Ontology（本体论）是AI世界的'宪法'和'建筑图纸'。没有它，大模型只是个记忆力超群但缺乏常识的文字接龙机器。Palantir凭什么市值4000亿？答案就藏在这12张漫画里。",
-      "tags": ["AI", "Ontology", "Palantir", "知识图谱"],
+      "tags": [
+        "AI",
+        "Ontology",
+        "Palantir",
+        "知识图谱"
+      ],
       "url": "/articles/ai-ontology-blueprint.html"
     },
     {
@@ -75,7 +140,12 @@
       "date": "2026-03-19",
       "cover_emoji": "🤖",
       "summary": "一个人忙不过来怎么办？分身。3天时间，6个专项Agent各司其职，持久会话、实时进度卡片、Portal面板、零消耗系统命令——从单体到军团的架构跃迁全记录。",
-      "tags": ["多Agent", "架构", "进化", "协作"],
+      "tags": [
+        "多Agent",
+        "架构",
+        "进化",
+        "协作"
+      ],
       "url": "/articles/multi-agent-legion.html"
     },
     {
@@ -84,7 +154,12 @@
       "date": "2026-03-15",
       "cover_emoji": "🖼️",
       "summary": "零服务器、零月费、零隐私泄露。一台 MacBook + 一只 AI 小龙虾 = 一个比群晖更好用的私人相册。AI 标签、人脸识别、智能搜索、视频管理、照片地图，全部本地运行。",
-      "tags": ["AI", "相册", "NAS", "产品"],
+      "tags": [
+        "AI",
+        "相册",
+        "NAS",
+        "产品"
+      ],
       "url": "/articles/photo-album.html"
     },
     {
@@ -93,7 +168,12 @@
       "date": "2026-03-09",
       "cover_emoji": "🤖",
       "summary": "腾讯云 CodeBuddy 推出 AI 桌面工作台 WorkBuddy，能直接操控你的电脑完成 PPT 制作、文件处理、数据分析。支持多模型切换，20+ 内置技能，微信/QQ/飞书远程指挥，1 分钟上手。",
-      "tags": ["腾讯", "AI Agent", "WorkBuddy", "效率"],
+      "tags": [
+        "腾讯",
+        "AI Agent",
+        "WorkBuddy",
+        "效率"
+      ],
       "url": "https://mp.weixin.qq.com/s/TFvgZ5QK4oLI91KYJuJfeg"
     },
     {
@@ -102,7 +182,12 @@
       "date": "2026-03-12",
       "cover_emoji": "🦞",
       "summary": "腾讯基于 OpenClaw 推出 Qclaw，3 分钟完成部署，原生微信控制。支持 Kimi、DeepSeek、MiniMax 等多模型切换，ClawHub 5000+ 技能生态，直接微信发消息指挥电脑干活。",
-      "tags": ["腾讯", "Qclaw", "OpenClaw", "微信"],
+      "tags": [
+        "腾讯",
+        "Qclaw",
+        "OpenClaw",
+        "微信"
+      ],
       "url": "https://mp.weixin.qq.com/s/5DGkGHc66_f9zarLQVNdRw"
     }
   ],
