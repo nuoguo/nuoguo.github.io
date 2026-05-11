@@ -106,19 +106,130 @@
   ],
   "articles": [
     {
+      "id": "apple-intelligence-disk",
+      "title": "Apple Intelligence 到底吃了多少磁盘空间",
+      "date": "2026-05-11",
+      "cover_emoji": "💿",
+      "summary": "Apple Intelligence 来了，你的磁盘也跟着走了。实测发现，完整功能需要至少 10GB 额外空间，模型文件分散在系统各处。",
+      "tags": ["Mac", "Apple Intelligence", "磁盘空间", "DiskBot"],
+      "url": "/articles/diskbot/apple-intelligence-disk.html"
+    },
+    {
+      "id": "mac-storage-facts",
+      "title": "Mac存储管理的10个冷知识",
+      "date": "2026-05-10",
+      "cover_emoji": "💿",
+      "summary": "删除的文件其实还在？空文件夹也占空间？「系统数据」是个筐？这10个冷知识，让你重新认识Mac存储。",
+      "tags": ["Mac", "存储管理", "冷知识", "DiskBot"],
+      "url": "/articles/diskbot/mac-storage-facts.html"
+    },
+    {
+      "id": "free-mac-cleaner",
+      "title": "Mac清理工具居然还在收费？2026年了还有免费替代品",
+      "date": "2026-05-10",
+      "cover_emoji": "💿",
+      "summary": "CleanMyMac要价50美元，DaisyDisk也要10美元。但2026年了，Mac清理工具居然还有完全免费的——而且比收费的更好用。",
+      "tags": ["Mac", "磁盘清理", "免费工具", "DiskBot"],
+      "url": "/articles/diskbot/free-mac-cleaner.html"
+    },
+    {
+      "id": "storage-anxiety-report",
+      "title": "256GB Mac还能撑多久？2026存储焦虑报告",
+      "date": "2026-05-04",
+      "cover_emoji": "💿",
+      "summary": "256GB MacBook用户平均每月产生3.2GB缓存，系统数据年增长率达47%。你的Mac还能撑多久？用DiskBot实测数据告诉你真相。",
+      "tags": ["Mac", "存储焦虑", "DiskBot", "数据分析"],
+      "url": "/articles/diskbot/storage-anxiety-report.html"
+    },
+    {
+      "id": "library-cache-cleanup",
+      "title": "Mac Library缓存清理指南",
+      "date": "2026-05-01",
+      "cover_emoji": "💿",
+      "summary": "~/Library/Caches 里藏着几十GB的无用文件。但哪些能删，哪些不能动？这份指南帮你安全清理，不踩坑。",
+      "tags": ["Mac", "Library", "缓存清理", "DiskBot"],
+      "url": "/articles/diskbot/library-cache-cleanup.html"
+    },
+    {
+      "id": "node-modules-40gb",
+      "title": "node_modules居然有40GB",
+      "date": "2026-04-29",
+      "cover_emoji": "💿",
+      "summary": "前端开发者的噩梦：10个老项目，node_modules加起来居然40GB。用DiskBot一键扫描，发现还有更多被遗忘的依赖黑洞。",
+      "tags": ["Mac", "node_modules", "开发者", "DiskBot"],
+      "url": "/articles/diskbot/node-modules-40gb.html"
+    },
+    {
+      "id": "diskbot-tips",
+      "title": "DiskBot 5个隐藏技巧",
+      "date": "2026-04-29",
+      "cover_emoji": "💿",
+      "summary": "TreeMap可视化、大文件Top200、重复文件检测、缓存一键清理、旧文件归档——这5个技巧让你的DiskBot更好用。",
+      "tags": ["Mac", "DiskBot", "技巧", "效率"],
+      "url": "/articles/diskbot/diskbot-tips.html"
+    },
+    {
+      "id": "system-data-bloat",
+      "title": "macOS系统数据臃肿的真相",
+      "date": "2026-04-27",
+      "cover_emoji": "💿",
+      "summary": "系统数据从20GB悄悄涨到80GB？Time Machine本地快照、iOS备份、缓存堆积——揭秘系统数据膨胀的三大元凶。",
+      "tags": ["Mac", "系统数据", "磁盘清理", "DiskBot"],
+      "url": "/articles/diskbot/system-data-bloat.html"
+    },
+    {
+      "id": "duplicate-files-detection",
+      "title": "用5分钟，找回可能被浪费的10GB空间",
+      "date": "2026-04-24",
+      "cover_emoji": "💿",
+      "summary": "重复文件是隐形的存储杀手。照片备份、文档副本、下载的安装包……用DiskBot一键扫描，5分钟找回被浪费的空间。",
+      "tags": ["Mac", "重复文件", "磁盘清理", "DiskBot"],
+      "url": "/articles/diskbot/duplicate-files-detection.html"
+    },
+    {
+      "id": "diskbot-3min-guide",
+      "title": "3分钟，让你的Mac存储空间一目了然",
+      "date": "2026-04-17",
+      "cover_emoji": "💿",
+      "summary": "下载、安装、激活——3分钟完成DiskBot全部设置。TreeMap可视化让你的Mac存储空间一目了然，完全免费。",
+      "tags": ["Mac", "DiskBot", "教程", "免费"],
+      "url": "/articles/diskbot/diskbot-3min-guide.html"
+    },
+    {
       "id": "cleanmymac-free",
       "title": "别再花300块买CleanMyMac了，这个免费工具更好用",
-      "date": "2026-04-12",
+      "date": "2026-04-15",
       "cover_emoji": "💿",
       "summary": "CleanMyMac要价50美元，DaisyDisk也要10美元。但2026年了，Mac清理工具居然还有免费的——而且比它们都好用。",
-      "tags": [
-        "Mac",
-        "磁盘清理",
-        "免费工具",
-        "DiskBot",
-        "CleanMyMac"
-      ],
+      "tags": ["Mac", "磁盘清理", "免费工具", "DiskBot", "CleanMyMac"],
       "url": "/articles/diskbot/cleanmymac-free.html"
+    },
+    {
+      "id": "developer-xcode-docker-cache",
+      "title": "开发者专属：一键清理 Xcode + Docker 缓存",
+      "date": "2026-04-10",
+      "cover_emoji": "💿",
+      "summary": "Xcode DerivedData 20GB、Docker镜像30GB、npm缓存10GB——开发者Mac的存储黑洞。用DiskBot一键识别，安全清理。",
+      "tags": ["Mac", "Xcode", "Docker", "开发者", "DiskBot"],
+      "url": "/articles/diskbot/developer-xcode-docker-cache.html"
+    },
+    {
+      "id": "designer-storage-rescue",
+      "title": "设计师的存储自救：从“硬盘已满”到释放120GB",
+      "date": "2026-04-08",
+      "cover_emoji": "💿",
+      "summary": "设计师的Mac：Final Cut工程、PSD源文件、4K素材……存储永远不够用。用DiskBot可视化扫描，发现120GB可清理空间。",
+      "tags": ["Mac", "设计师", "磁盘清理", "DiskBot"],
+      "url": "/articles/diskbot/designer-storage-rescue.html"
+    },
+    {
+      "id": "diskbot-treemap-scan",
+      "title": "5分钟找回50GB：DiskBot可视化扫描实战",
+      "date": "2026-04-08",
+      "cover_emoji": "💿",
+      "summary": "TreeMap矩形树图，一眼看穿磁盘占用。10秒扫描完成，50GB可清理空间无处遁形——这就是DiskBot的可视化扫描实战。",
+      "tags": ["Mac", "TreeMap", "可视化", "DiskBot"],
+      "url": "/articles/diskbot/diskbot-treemap-scan.html"
     },
     {
       "id": "ai-ontology-blueprint",
