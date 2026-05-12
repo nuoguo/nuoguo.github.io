@@ -126,6 +126,20 @@
   ],
   "articles": [
     {
+      "id": "college-storage-guide",
+      "title": "大学生省钱攻略：不花一分钱清理 Mac 存储",
+      "date": "2026-05-12",
+      "cover_emoji": "🎓",
+      "summary": "还在用盗版 CleanMyMac？教你用完全免费的方式清理 Mac 存储，省下的钱够吃一周食堂了。",
+      "tags": [
+        "Mac清理",
+        "大学生",
+        "免费工具",
+        "DiskBot"
+      ],
+      "url": "/articles/diskbot/college-storage-guide-20260512.html"
+    },
+    {
       "id": "ai-model-storage",
       "title": "AI 时代的 Mac 存储管理：模型文件到底占了多少空间",
       "date": "2026-05-12",
