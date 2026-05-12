@@ -126,6 +126,21 @@
   ],
   "articles": [
     {
+      "id": "ai-model-storage",
+      "title": "AI 时代的 Mac 存储管理：模型文件到底占了多少空间",
+      "date": "2026-05-12",
+      "cover_emoji": "🤖",
+      "summary": "本地大模型、Stable Diffusion、LLM 权重文件……AI 浪潮下你的 Mac 硬盘正在被悄悄吃掉。一文教你找出并清理隐藏的 AI 存储黑洞。",
+      "tags": [
+        "AI",
+        "存储管理",
+        "模型文件",
+        "DiskBot",
+        "Mac清理"
+      ],
+      "url": "/articles/diskbot/ai-model-storage-20260512.html"
+    },
+    {
       "id": "apple-intelligence-disk",
       "title": "Apple Intelligence 到底吃了多少磁盘空间",
       "date": "2026-05-11",
