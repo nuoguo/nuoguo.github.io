@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DiskBot — macOS 磁盘分析与清理工具</title>
-<meta name="description" content="免费下载 DiskBot，可视化发现隐藏空间，智能清理一键释放。关注「诺果AI」公众号获取激活码即可使用。">
+<title>DiskBot — macOS 磁盘空间分析工具</title>
+<meta name="description" content="免费下载 DiskBot，可视化发现隐藏空间，快速定位并处理大文件。关注「诺果AI」公众号获取激活码即可使用。">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💿</text></svg>">
 <style>
 :root {
@@ -147,7 +147,7 @@ body {
 <!-- Hero -->
 <section class="hero">
   <h1>你的 Mac，<br>还有多少隐藏空间？</h1>
-  <p class="subtitle">可视化发现隐藏空间，智能清理一键释放</p>
+  <p class="subtitle">可视化发现隐藏空间，快速定位并处理大文件</p>
   <div class="hero-buttons">
     <a href="#download" class="btn-primary">免费下载</a>
     <a href="#features" class="btn-ghost">了解更多</a>
@@ -161,7 +161,7 @@ body {
 <!-- Features -->
 <section id="features" class="features">
   <h2 class="section-title">一眼看透磁盘空间</h2>
-  <p class="section-subtitle">不再猜测"系统数据"到底是什么 —— DiskBot 用可视化替代猜测。</p>
+  <p class="section-subtitle">不再猜测"系统数据"到底是什么 —— DiskBot 用可视化地图、文件列表和详情栏帮你定位空间占用。</p>
   <div class="feature-grid">
     <div class="feature-card">
       <div class="feature-icon">🗺️</div>
@@ -171,22 +171,22 @@ body {
     <div class="feature-card">
       <div class="feature-icon">📁</div>
       <h3>大文件发现</h3>
-      <p>按大小排序，找到那些被遗忘的巨型文件。</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🔍</div>
-      <h3>重复文件检测</h3>
-      <p>智能识别内容完全相同的文件，安全去重释放空间。</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon">🗑️</div>
-      <h3>缓存清理</h3>
-      <p>检测 16+ 种缓存类型：浏览器、IDE、包管理器……</p>
+      <p>按大小排序，支持选择、Finder 定位、复制路径和移到废纸篓。</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">📊</div>
       <h3>分类统计</h3>
-      <p>10 大文件类别一目了然：文档、视频、代码、系统……</p>
+      <p>10 大文件类别一目了然，并可在分类列表中直接处理文件。</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🧾</div>
+      <h3>文件详情栏</h3>
+      <p>查看大小、路径、日期和内容统计，操作前先确认文件信息。</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🗑️</div>
+      <h3>安全移到废纸篓</h3>
+      <p>删除操作进入系统废纸篓，可恢复，减少误删风险。</p>
     </div>
     <div class="feature-card">
       <div class="feature-icon">🌍</div>
@@ -213,16 +213,16 @@ body {
       <p>分类统计</p>
     </div>
     <div class="screenshot-item">
-      <img src="img/screenshots/duplicates.png" alt="重复文件检测" loading="lazy">
-      <p>重复文件检测</p>
+      <img src="img/screenshots/scan-progress.png" alt="扫描进度" loading="lazy">
+      <p>扫描进度</p>
     </div>
     <div class="screenshot-item">
-      <img src="img/screenshots/cache-detection.png" alt="缓存检测" loading="lazy">
-      <p>缓存检测</p>
+      <img src="img/screenshots/main-view.png" alt="文件详情与操作" loading="lazy">
+      <p>文件详情与操作</p>
     </div>
     <div class="screenshot-item">
-      <img src="img/screenshots/cleanup.png" alt="清理界面" loading="lazy">
-      <p>一键清理</p>
+      <img src="img/screenshots/overview.png" alt="磁盘空间总览" loading="lazy">
+      <p>磁盘空间总览</p>
     </div>
   </div>
 </section>
@@ -248,7 +248,7 @@ body {
     <div class="activation-step">
       <div class="step-number">3</div>
       <h4>粘贴激活</h4>
-      <p>打开 DiskBot → 激活界面<br>粘贴激活码 → 解锁全部功能</p>
+      <p>打开 DiskBot → 激活界面<br>粘贴激活码 → 进入完整体验</p>
     </div>
   </div>
 </section>
@@ -256,51 +256,51 @@ body {
 <!-- Download -->
 <section id="download" class="download">
   <h2 class="section-title">下载 DiskBot</h2>
-  <p class="section-subtitle">选择适合你 Mac 芯片的版本</p>
+  <p class="section-subtitle">v1.2.2 · 选择适合你 Mac 芯片的版本</p>
   <div class="download-grid">
     <div class="download-card">
       <span class="chip-icon">🍎</span>
       <h3>Apple Silicon</h3>
       <p>M1 / M2 / M3 / M4 芯片</p>
-      <a href="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.1.0-apple-silicon.dmg"
+      <a href="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.2.2-apple-silicon.dmg"
          class="btn-primary download-btn"
-         data-primary="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.1.0-apple-silicon.dmg"
-         data-mirror="/diskbot/download/DiskBot-1.1.0-apple-silicon.dmg"
+         data-primary="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.2.2-apple-silicon.dmg"
+         data-mirror="/diskbot/download/DiskBot-1.2.2-apple-silicon.dmg"
          style="width:100%;text-align:center;">下载 .dmg</a>
-      <div class="download-mirror">备用镜像：<a href="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.1.0-apple-silicon.dmg" target="_blank" rel="noopener">raw.githubusercontent.com</a></div>
+      <div class="download-mirror">备用镜像：<a href="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.2.2-apple-silicon.dmg" target="_blank" rel="noopener">raw.githubusercontent.com</a></div>
       <div class="download-meta">
-        大小：约 906KB<br>
-        SHA256：<code>4ba9bbc41081f0cd8b05bb175678b0a2a4e119a3a54ac33cc90422a3252ad762</code>
+        大小：约 802KB<br>
+        SHA256：<code>e12794e4f7f9161906335e92ec9a99c55d9e8b68734bac2c7eec399bb77bdf1b</code>
       </div>
     </div>
     <div class="download-card">
       <span class="chip-icon">💻</span>
       <h3>Intel</h3>
       <p>Intel Core i5 / i7 / i9 芯片</p>
-      <a href="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.1.0-intel.dmg"
+      <a href="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.2.2-intel.dmg"
          class="btn-primary download-btn"
-         data-primary="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.1.0-intel.dmg"
-         data-mirror="/diskbot/download/DiskBot-1.1.0-intel.dmg"
+         data-primary="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.2.2-intel.dmg"
+         data-mirror="/diskbot/download/DiskBot-1.2.2-intel.dmg"
          style="width:100%;text-align:center;">下载 .dmg</a>
-      <div class="download-mirror">备用镜像：<a href="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.1.0-intel.dmg" target="_blank" rel="noopener">raw.githubusercontent.com</a></div>
+      <div class="download-mirror">备用镜像：<a href="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.2.2-intel.dmg" target="_blank" rel="noopener">raw.githubusercontent.com</a></div>
       <div class="download-meta">
-        大小：约 953KB<br>
-        SHA256：<code>fc9015cf3c9a69c2b69985933f471a3952e3b5f5d44a12785a32e1f15ec9253b</code>
+        大小：约 844KB<br>
+        SHA256：<code>6bf864f3a65d70ca37979732d1c30a0c9447a6150c28d57fd0bff7df58e369d3</code>
       </div>
     </div>
     <div class="download-card">
       <span class="chip-icon">🌐</span>
       <h3>通用版</h3>
       <p>适用于所有 Mac（体积较大）</p>
-      <a href="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.1.0-universal.dmg"
+      <a href="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.2.2-universal.dmg"
          class="btn-primary download-btn"
-         data-primary="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.1.0-universal.dmg"
-         data-mirror="/diskbot/download/DiskBot-1.1.0-universal.dmg"
+         data-primary="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.2.2-universal.dmg"
+         data-mirror="/diskbot/download/DiskBot-1.2.2-universal.dmg"
          style="width:100%;text-align:center;">下载 .dmg</a>
-      <div class="download-mirror">备用镜像：<a href="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.1.0-universal.dmg" target="_blank" rel="noopener">raw.githubusercontent.com</a></div>
+      <div class="download-mirror">备用镜像：<a href="https://raw.githubusercontent.com/nuoguo/nuoguo.github.io/main/diskbot/download/DiskBot-1.2.2-universal.dmg" target="_blank" rel="noopener">raw.githubusercontent.com</a></div>
       <div class="download-meta">
-        大小：约 1.5MB<br>
-        SHA256：<code>47e6fbcf749581af71c2ae0e9840f1ffe2cb0da54381dc9863797d61c79578b6</code>
+        大小：约 1.3MB<br>
+        SHA256：<code>7042b788d9345190c3ad781f15efe921ef04e53b0c9ecd09865e0174e8366b21</code>
       </div>
     </div>
   </div>
@@ -330,7 +330,7 @@ body {
 
 <!-- WeChat CTA -->
 <section class="wechat-cta">
-  <h2>关注公众号，免费使用全部功能</h2>
+  <h2>关注公众号，免费使用 DiskBot</h2>
   <p class="subtitle">Mac 存储管理干货、DiskBot 更新通知、AI 实战技巧——都在这里。</p>
   <div class="wechat-box">
     <img src="img/nuoguoAI-qr.jpg" alt="诺果AI 公众号二维码" style="width:160px;height:160px;border-radius:12px;margin-bottom:16px;">
