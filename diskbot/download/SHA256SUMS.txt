@@ -4,3 +4,6 @@ e12794e4f7f9161906335e92ec9a99c55d9e8b68734bac2c7eec399bb77bdf1b  DiskBot-1.2.2-
 e717e1b1e06819b9b2212fa9bf87706434b9ca77a62bc9ee2f16f66017790268  DiskBot-1.2.3-apple-silicon.dmg
 1e3a7f3e0f2d1c2367d06169ac5ae6f7eef5ffdb3a28ed8badf3718c879aef79  DiskBot-1.2.3-intel.dmg
 7fed92b899d1a7c2880c90125cd02a0b8883b69030e9a41091b0bac259e4ba00  DiskBot-1.2.3-universal.dmg
+0fdc3df9d7e0d7743289cbcb63d5cc07414760f435a746c8fba1cc1c9af750cc  DiskBot-1.2.4-apple-silicon.dmg
+7d4a4d7b5e140d8b671836fad0e0205b57ec99b23172fcc9d50659529dbf698c  DiskBot-1.2.4-intel.dmg
+bd28c2ed2c479d3c6158a38e96255b5ac158af33f0581ebfefcec2840df9e168  DiskBot-1.2.4-universal.dmg
